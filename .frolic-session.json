@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-22T15:18:33.673Z",
+  "timestamp": "2026-02-22T15:35:29.779Z",
   "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
-  "eventCount": 70,
+  "eventCount": 118,
   "events": [
     {
       "timestamp": "2026-02-22T15:15:43.936Z",
@@ -1263,11 +1263,1952 @@
       "cursorPosition": null,
       "selectionLength": 0,
       "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:20:15.634Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "git\\scm0\\input",
+      "relativePath": "git\\scm0\\input",
+      "language": "scminput",
+      "lineCount": 1,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 38,
+        "character": 21
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 84,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "feat: implement Remotion video scenes, Spotify widget, and lyrics display components",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:20:15.689Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "diagnostic_change",
+      "file": "git\\scm0\\input",
+      "relativePath": "git\\scm0\\input",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:20:20.614Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "git\\scm0\\input",
+      "relativePath": "git\\scm0\\input",
+      "language": "scminput",
+      "lineCount": 1,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 19,
+        "character": 25
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 0,
+          "rangeLength": 84,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:23:36.364Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 901,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 100,
+        "character": 90
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:25:46.799Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 953,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 100,
+        "character": 90
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 5007,
+          "rangeLength": 0,
+          "lineCountDelta": 52,
+          "likelyAI": true,
+          "changeText": "VS Code Window (Kiri Floating - Sindiran PPLG) */}\n    <motion.div className=\"absolute w-[500px] h-[360px] top-[22%] left-[4%] bg-[#1e1e1e] rounded-xl shadow-[0_40px_100px_rgba(0,0,0,0.8)] border border-white/10 flex flex-col z-20 overflow-hidden origin-bottom-left transform-gpu\"\n      style={{ transformStyle: 'preserve-3d' }}\n      initial={{ scale: 0.2, opacity: 0, rotate: -20, y: 150, x: -100 }} \n      animate={{ \n        scale: 1, \n        opacity: 0.95, \n        rotate: [6, -2, 6], \n        y: [0, 15, 0],\n        z: 40,\n        rotateY: [15, 5, 15],\n        rotateX: [5, -5, 5]\n      }} \n      transition={{ \n        duration: 1.8, type: \"spring\", delay: 0.8, bounce: 0.4,\n        rotate: { duration: 6, repeat: Infinity, ease: \"easeInOut\" },\n        y: { duration: 5, repeat: Infinity, ease: \"easeInOut\" },\n        rotateY: { duration: 7, repeat: Infinity, ease: \"easeInOut\" },\n        rotateX: { duration: 8, repeat: Infinity, ease: \"easeInOut\" }\n      }}\n    >\n      <div className=\"h-8 bg-[#2d2d2d] flex items-center px-4 relative select-none\">\n         <div className=\"flex gap-2\">\n            <div className=\"w-3 h-3 rounded-full bg-[#ff5f56]\"></div><div className=\"w-3 h-3 rounded-full bg-[#ffbd2e]\"></div><div className=\"w-3 h-3 rounded-full bg-[#27c93f]\"></div>\n         </div>\n         <span className=\"absolute left-1/2 -translate-x-1/2 text-xs text-gray-400 font-sans tracking-wider\">index.ts — PPLG_Project</span>\n      </div>\n      <div className=\"flex-1 p-5 font-mono text-[13px] leading-relaxed flex flex-col gap-1 whitespace-pre shadow-inner\">\n        <motion.p initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 1.5 }}><span className=\"text-pink-500 font-medium\">const</span> <span className=\"text-blue-400\">kenangan</span> = <span className=\"text-yellow-300\">\"PPLG Angkatan 2026\"</span>;</p>\n        <motion.p initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 1.8 }}><span className=\"text-pink-500 fon...[TRUNCATED]",
+          "wasTruncated": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:25:46.806Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 953,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 100,
+        "character": 90
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:25:46.957Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 953,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 100,
+        "character": 90
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:25:46.959Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 953,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 100,
+        "character": 90
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:25:46.963Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 953,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 0,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:25:47.588Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:26:18.062Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 953,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 630,
+        "character": 69
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 7,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "motion.",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "motion.",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "motion.",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "motion.",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "motion.",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "motion.",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "motion.",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:26:18.063Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 953,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 630,
+        "character": 69
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:26:18.140Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 953,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 630,
+        "character": 69
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:26:18.141Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 953,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 630,
+        "character": 69
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:26:18.565Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:26:56.351Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 990,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 630,
+        "character": 69
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 2446,
+          "rangeLength": 0,
+          "lineCountDelta": 37,
+          "likelyAI": true,
+          "changeText": "Floating Terminal Window (Sindiran PPLG via CLI) */}\n    <motion.div className=\"absolute w-[360px] h-[240px] bottom-[12%] right-[5%] bg-black/95 rounded-lg shadow-[0_30px_80px_rgba(0,0,0,0.8)] border border-gray-700 flex flex-col z-25 overflow-hidden origin-top-right transform-gpu\"\n      style={{ transformStyle: 'preserve-3d' }}\n      initial={{ scale: 0, opacity: 0, rotate: 20, y: 150, x: 100 }} \n      animate={{ \n        scale: 1, \n        opacity: 0.95, \n        rotate: [-6, 2, -6], \n        y: [0, -15, 0],\n        z: 80,\n        rotateY: [-20, -10, -20],\n        rotateX: [-5, 5, -5]\n      }} \n      transition={{ \n        duration: 1.5, type: \"spring\", delay: 1.2, bounce: 0.4,\n        rotate: { duration: 5, repeat: Infinity, ease: \"easeInOut\" },\n        y: { duration: 4, repeat: Infinity, ease: \"easeInOut\" },\n        rotateY: { duration: 6, repeat: Infinity, ease: \"easeInOut\" },\n        rotateX: { duration: 7, repeat: Infinity, ease: \"easeInOut\" }\n      }}\n    >\n      <div className=\"h-7 bg-gray-800 flex items-center px-3 relative select-none\">\n         <span className=\"text-[11px] text-gray-400 font-mono\">user@pplg-macbook:~</span>\n      </div>\n      <div className=\"flex-1 p-4 font-mono text-[13px] leading-relaxed flex flex-col gap-1 text-green-500 shadow-inner\">\n        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.0 }}>$ npm run build:video</motion.p>\n        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5 }} className=\"text-gray-300\">&gt; Compiling 3D scenes...</motion.p>\n        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3.0 }} className=\"text-gray-300\">&gt; Bypassing After Effects...</motion.p>\n        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3.5 }} className=\"text-blue-400\">✔ Done rendering with React!</motion.p>\n        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 4.0 }}...[TRUNCATED]",
+          "wasTruncated": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:26:56.354Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 990,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 630,
+        "character": 69
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:26:56.447Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 990,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 630,
+        "character": 69
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:26:56.449Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 990,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 630,
+        "character": 69
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:26:56.449Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 990,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 0,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:26:57.323Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:31:07.737Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 781,
+        "character": 34
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 9,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "\n        ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-110",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 21,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "n drop-shadow-md scal",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 18,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-full object-conta",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-full ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 15,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ".png\" className",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 8,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ve_Studi",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "i_Res",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 9,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "/4b/DaVin",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 12,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "dia/commons/",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 11,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "a.org/wikip",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 17,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "://upload.wikimed",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "=\"http",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "r",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "img ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 13,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "\n            ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 33,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " flex items-center justify-center",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ti",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 14,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "e/20 p-2 trans",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 71,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "v className=\"w-20 h-20 bg-black rounded-2xl shadow-lg border border-whi",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 19,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "olve */}\n        <d",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ci Re",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 42,
+          "rangeLength": 0,
+          "lineCountDelta": 2,
+          "likelyAI": false,
+          "changeText": "dow-md\" />\n        </div>\n        {/* DaVi",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "op-sh",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 10,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-contain d",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 12,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "h-full objec",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 39,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "_Effects_CC_icon.svg\" className=\"w-full",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 15,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "s/c/cb/Adobe_Af",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 23,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "dia.org/wikipedia/commo",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 22,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "=\"https://upload.wikim",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 28,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "center\">\n            <img sr",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 77,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "0 p-3 transition-transform hover:-translate-y-4 cursor-pointer hover:scale-11",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "00005",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 57,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "be After Effects */}\n        <div className=\"w-20 h-20 bg",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 25,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "er\"></div>\n        {/* Ad",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 8,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "self-cen",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " mx-2",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 177,
+          "rangeLength": 0,
+          "lineCountDelta": 3,
+          "likelyAI": true,
+          "changeText": " flex items-center justify-center text-white font-extrabold text-5xl font-serif italic drop-shadow-lg\">\n            L\n        </div>\n        <div className=\"w-px h-16 bg-white/5",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 30,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " cursor-pointer hover:scale-11",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 29,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "transform hover:-translate-y-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "sition",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 18,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "r-white/20 p-2 tra",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "r bord",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "d",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " bo",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 41,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "cyan-400 to-blue-500 rounded-2xl shadow-l",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "tr",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 24,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "\n        {/* Laragon */}",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 9,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "\n        ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 16,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "n drop-shadow-md",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 18,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-full object-conta",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-full ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "assName",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 13,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ans_Logo.svg\"",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 17,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "/9/98/Apache_NetB",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "omm",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "dia/",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "/wikip",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 14,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "d.wikimedia.or",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 19,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "g src=\"https://uplo",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "i",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 13,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "\n            ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 33,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " flex items-center justify-center",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 113,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": true,
+          "changeText": " */}\n        <div className=\"w-20 h-20 bg-white rounded-2xl shadow-lg border border-white/20 p-2 transition-trans",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 49,
+          "rangeLength": 0,
+          "lineCountDelta": 2,
+          "likelyAI": false,
+          "changeText": "op-shadow-md\" />\n        </div>\n        {/* NetBe",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 10,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-contain d",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 10,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "full objec",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 25,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ".svg\" className=\"w-full h",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "c",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "udio_",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "d_S",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 11,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "/3/34/Andro",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "/commo",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 10,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "g/wikipedi",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 24,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "tps://upload.wikimedia.o",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 22,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "           <img src=\"h",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "\">\n",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 72,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " transition-transform hover:-translate-y-4 cursor-pointer hover:scale-11",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "20 p-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "1",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ee",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "g",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "gree",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "b",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 31,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "\n        {/* Android Studio */}",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 9,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "\n        ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 16,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "n drop-shadow-md",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 18,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-full object-conta",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-full ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "assName",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "c",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 9,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "_icon.svg",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 19,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "a/commons/4/4c/Xcod",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ikiped",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "g/",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 13,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ad.wikimedia.",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 13,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "=\"https://upl",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "sr",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 23,
+          "rangeLength": 5,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "nter\">\n            <img",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "fy-c",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "t",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ju",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 13,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "x items-cente",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " f",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 9,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "2",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 10,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "p",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "3",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "tr",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 22,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "{/* Xcode */}\n        ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "4",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 13,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "PPLG EDITION ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 57,
+          "rangeLength": 0,
+          "lineCountDelta": 4,
+          "likelyAI": false,
+          "changeText": "tive z-10\" />\n       </div>\n    </motion.div>\n\n    {/* ma",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 17,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "e=\"text-white rel",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2086,
+          "rangeLength": 0,
+          "lineCountDelta": 18,
+          "likelyAI": true,
+          "changeText": "Floating Coffee Cup (Coding Fuel) */}\n    <motion.div className=\"absolute w-24 h-24 top-[5%] left-[45%] bg-black/40 backdrop-blur-xl rounded-full shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/20 flex items-center justify-center text-5xl z-15 transform-gpu\"\n      initial={{ scale: 0, opacity: 0, y: -50 }} animate={{ scale: 1, opacity: 1, y: [0, -20, 0], rotate: [-10, 10, -10] }} transition={{ delay: 1.8, duration: 2, y: { duration: 3, repeat: Infinity, ease: \"easeInOut\" }, rotate: { duration: 4, repeat: Infinity, ease: \"easeInOut\" } }}>\n       ☕\n    </motion.div>\n\n    {/* Floating Git Commit Badge */}\n    <motion.div className=\"absolute px-6 py-3 bottom-[25%] right-[28%] bg-green-500/90 backdrop-blur-md rounded-xl shadow-[0_20px_50px_rgba(0,255,0,0.2)] border border-green-300/50 flex items-center gap-3 z-25 transform-gpu\"\n      initial={{ scale: 0, opacity: 0, x: 50, rotateX: 45 }} animate={{ scale: 1, opacity: 1, y: [0, 10, 0], rotate: [5, -5, 5], rotateY: [10, -10, 10] }} transition={{ delay: 2.0, duration: 2, y: { duration: 4.5, repeat: Infinity, ease: \"easeInOut\" }, rotate: { duration: 5.5, repeat: Infinity, ease: \"easeInOut\" } }}>\n       <CheckCircle2 size={24} className=\"text-white\" />\n       <span className=\"text-white font-bold font-mono tracking-tight text-sm\">git push --force</span>\n    </motion.div>\n\n    {/* Floating Bug Badge */}\n    <motion.div className=\"absolute px-4 py-4 top-[35%] left-[25%] bg-red-500/90 backdrop-blur-md rounded-full shadow-[0_20px_50px_rgba(255,0,0,0.3)] border border-red-300/50 flex items-center gap-2 z-25 transform-gpu\"\n      initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1, y: [0, -15, 0], rotate: [-15, 15, -15] }} transition={{ delay: 2.2, duration: 2, y: { duration: 3.8, repeat: Infinity, ease: \"easeInOut\" }, rotate: { duration: 4.2, repeat: Infinity, ease: \"easeInOut\" } }}>\n       <span className=\"text-white text-2xl drop-shadow-md\">🐛</span>\n       <div className=\"absolute -right-2 -top-2 bg-green...[TRUNCATED]",
+          "wasTruncated": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:31:07.742Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 825,
+        "character": 34
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:31:07.842Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 825,
+        "character": 34
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:31:07.873Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 825,
+        "character": 34
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:31:07.874Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 0,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:31:08.204Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_open",
+      "file": "\\488",
+      "relativePath": "\\488",
+      "language": "typescriptreact",
+      "lineCount": 2,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:31:08.215Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_open",
+      "file": "\\489",
+      "relativePath": "\\489",
+      "language": "typescriptreact",
+      "lineCount": 3,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:31:08.860Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:32:04.560Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "diagnostic_change",
+      "file": "\\488",
+      "relativePath": "\\488",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:32:04.595Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "diagnostic_change",
+      "file": "\\489",
+      "relativePath": "\\489",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:33:43.606Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 739,
+        "character": 22
+      },
+      "selectionLength": 66,
+      "changes": [
+        {
+          "textLength": 66,
+          "rangeLength": 66,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "https://cdn.jim-nielsen.com/macos/512/xcode-2020-11-11.png?rf=1024",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:33:43.607Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 739,
+        "character": 22
+      },
+      "selectionLength": 66,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:33:44.633Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 739,
+        "character": 88
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:33:44.634Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 739,
+        "character": 88
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:33:44.767Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:34:06.678Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 743,
+        "character": 22
+      },
+      "selectionLength": 75,
+      "changes": [
+        {
+          "textLength": 86,
+          "rangeLength": 75,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Android_Studio_icon_%282023%29.svg",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:34:06.679Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 743,
+        "character": 22
+      },
+      "selectionLength": 75,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:34:07.633Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:34:07.634Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 743,
+        "character": 108
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:34:07.635Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 743,
+        "character": 108
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:34:36.712Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 760,
+        "character": 22
+      },
+      "selectionLength": 78,
+      "changes": [
+        {
+          "textLength": 78,
+          "rangeLength": 78,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "https://upload.wikimedia.org/wikipedia/commons/4/4d/DaVinci_Resolve_Studio.png",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:34:36.713Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 760,
+        "character": 22
+      },
+      "selectionLength": 78,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:34:37.593Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 760,
+        "character": 100
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:34:37.595Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 1034,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 760,
+        "character": 100
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:34:37.851Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T15:34:49.803Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "file_edit",
+      "file": "git\\scm0\\input",
+      "relativePath": "git\\scm0\\input",
+      "language": "scminput",
+      "lineCount": 1,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 38,
+        "character": 21
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 85,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "feat: implement Remotion video scenes, Spotify widget, and lyrics display components.",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T15:34:49.868Z",
+      "sessionId": "22e5ad0e-a294-4180-95cc-3604f96aa84d",
+      "eventType": "diagnostic_change",
+      "file": "git\\scm0\\input",
+      "relativePath": "git\\scm0\\input",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
     }
   ],
   "metadata": {
     "version": "1.3.0",
     "trigger": "smart-backup",
-    "memoryUsage": 64678
+    "memoryUsage": 146188
   }
 }

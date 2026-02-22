@@ -585,6 +585,95 @@ const Scene6MacOS = () => (
       </div>
     </motion.div>
 
+    {/* VS Code Window (Kiri Floating - Sindiran PPLG) */}
+    <motion.div className="absolute w-[500px] h-[360px] top-[22%] left-[4%] bg-[#1e1e1e] rounded-xl shadow-[0_40px_100px_rgba(0,0,0,0.8)] border border-white/10 flex flex-col z-20 overflow-hidden origin-bottom-left transform-gpu"
+      style={{ transformStyle: 'preserve-3d' }}
+      initial={{ scale: 0.2, opacity: 0, rotate: -20, y: 150, x: -100 }} 
+      animate={{ 
+        scale: 1, 
+        opacity: 0.95, 
+        rotate: [6, -2, 6], 
+        y: [0, 15, 0],
+        z: 40,
+        rotateY: [15, 5, 15],
+        rotateX: [5, -5, 5]
+      }} 
+      transition={{ 
+        duration: 1.8, type: "spring", delay: 0.8, bounce: 0.4,
+        rotate: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+        y: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+        rotateY: { duration: 7, repeat: Infinity, ease: "easeInOut" },
+        rotateX: { duration: 8, repeat: Infinity, ease: "easeInOut" }
+      }}
+    >
+      <div className="h-8 bg-[#2d2d2d] flex items-center px-4 relative select-none">
+         <div className="flex gap-2">
+            <div className="w-3 h-3 rounded-full bg-[#ff5f56]"></div><div className="w-3 h-3 rounded-full bg-[#ffbd2e]"></div><div className="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+         </div>
+         <span className="absolute left-1/2 -translate-x-1/2 text-xs text-gray-400 font-sans tracking-wider">index.ts — PPLG_Project</span>
+      </div>
+      <div className="flex-1 p-5 font-mono text-[13px] leading-relaxed flex flex-col gap-1 whitespace-pre shadow-inner">
+        <motion.p initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 1.5 }}><span className="text-pink-500 font-medium">const</span> <span className="text-blue-400">kenangan</span> = <span className="text-yellow-300">"PPLG Angkatan 2026"</span>;</motion.p>
+        <motion.p initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 1.8 }}><span className="text-pink-500 font-medium">function</span> <span className="text-blue-200">editVideo</span>() {'{'}</motion.p>
+        <motion.p initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 2.1 }} className="pl-4"><span className="text-pink-500">if</span> (jurusan !== <span className="text-yellow-300">"DKV"</span>) {'{'}</motion.p>
+        <motion.p initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 2.4 }} className="pl-8"><span className="text-blue-400">console</span>.<span className="text-yellow-200">log</span>(<span className="text-yellow-300">"Siapa bilang anak PPLG gak bisa ngedit video?"</span>);</motion.p>
+        <motion.p initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 2.7 }} className="pl-8"><span className="text-blue-400">renderer</span>.<span className="text-yellow-200">renderWithCode</span>(<span className="text-blue-400">kenangan</span>);</motion.p>
+        <motion.p initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 3.0 }} className="pl-4">{'}'}</motion.p>
+        <motion.p initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 3.3 }}>{'}'}</motion.p>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3.6 }} className="mt-2 text-gray-500 italic">// Built with React & Framer Motion 😎</motion.div>
+        <motion.div className="w-2.5 h-5 bg-gray-400 mt-2 animate-pulse" />
+      </div>
+    </motion.div>
+
+    {/* NetBeans Icon Floating */}
+    <motion.div className="absolute w-24 h-24 top-[15%] right-[32%] bg-white/90 backdrop-blur-md rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/40 flex items-center justify-center p-3 z-15 transform-gpu"
+      initial={{ scale: 0, opacity: 0, y: -50, rotateX: 45 }} animate={{ scale: 1, opacity: 0.9, y: [0, -15, 0], rotate: [-10, 10, -10], rotateY: [10, -10, 10] }} transition={{ delay: 1.2, duration: 2, y: { duration: 4, repeat: Infinity, ease: "easeInOut" }, rotate: { duration: 5, repeat: Infinity, ease: "easeInOut" } }}>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" className="w-full h-full object-contain filter drop-shadow-md" />
+    </motion.div>
+
+    {/* XAMPP Icon Floating */}
+    <motion.div className="absolute w-28 h-28 bottom-[35%] left-[30%] bg-white/90 backdrop-blur-md rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/40 flex items-center justify-center p-4 z-25 transform-gpu"
+      initial={{ scale: 0, opacity: 0, x: -50, rotateX: -45 }} animate={{ scale: 1, opacity: 0.9, y: [0, 20, 0], rotate: [15, -5, 15], rotateY: [-10, 10, -10] }} transition={{ delay: 1.5, duration: 2, y: { duration: 3.5, repeat: Infinity, ease: "easeInOut" }, rotate: { duration: 6, repeat: Infinity, ease: "easeInOut" } }}>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Xampp_logo.svg" className="w-full h-full object-contain filter drop-shadow-md" />
+    </motion.div>
+
+    {/* Floating Terminal Window (Sindiran PPLG via CLI) */}
+    <motion.div className="absolute w-[360px] h-[240px] bottom-[12%] right-[5%] bg-black/95 rounded-lg shadow-[0_30px_80px_rgba(0,0,0,0.8)] border border-gray-700 flex flex-col z-25 overflow-hidden origin-top-right transform-gpu"
+      style={{ transformStyle: 'preserve-3d' }}
+      initial={{ scale: 0, opacity: 0, rotate: 20, y: 150, x: 100 }} 
+      animate={{ 
+        scale: 1, 
+        opacity: 0.95, 
+        rotate: [-6, 2, -6], 
+        y: [0, -15, 0],
+        z: 80,
+        rotateY: [-20, -10, -20],
+        rotateX: [-5, 5, -5]
+      }} 
+      transition={{ 
+        duration: 1.5, type: "spring", delay: 1.2, bounce: 0.4,
+        rotate: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+        y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+        rotateY: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+        rotateX: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+      }}
+    >
+      <div className="h-7 bg-gray-800 flex items-center px-3 relative select-none">
+         <span className="text-[11px] text-gray-400 font-mono">user@pplg-macbook:~</span>
+      </div>
+      <div className="flex-1 p-4 font-mono text-[13px] leading-relaxed flex flex-col gap-1 text-green-500 shadow-inner">
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.0 }}>$ npm run build:video</motion.p>
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5 }} className="text-gray-300">&gt; Compiling 3D scenes...</motion.p>
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3.0 }} className="text-gray-300">&gt; Bypassing After Effects...</motion.p>
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3.5 }} className="text-blue-400">✔ Done rendering with React!</motion.p>
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 4.0 }} className="text-yellow-400">✨ Finished in 1.4s</motion.p>
+        <div className="flex items-center gap-1 mt-1">
+           <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 4.5 }}>$</motion.span>
+           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 4.5 }} className="w-2.5 h-4 bg-gray-400 mt-0.5 animate-pulse" />
+        </div>
+      </div>
+    </motion.div>
+
     {/* Photo Viewer / Preview (Depan 3D Floating) */}
     <motion.div className="absolute w-[800px] h-[650px] top-[12%] right-[8%] bg-zinc-100/95 backdrop-blur-3xl rounded-xl shadow-[0_60px_200px_rgba(0,0,0,0.8)] border border-white/50 flex flex-col z-20 overflow-hidden origin-bottom-right transform-gpu"
       style={{ transformStyle: 'preserve-3d' }}
@@ -620,13 +709,57 @@ const Scene6MacOS = () => (
       </div>
     </motion.div>
 
-    {/* macOS DOCK */}
-    <motion.div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/40 backdrop-blur-2xl border border-white/40 rounded-3xl px-6 py-4 flex gap-6 shadow-[0_30px_60px_rgba(0,0,0,0.4)] z-30"
+    {/* Floating Coffee Cup (Coding Fuel) */}
+    <motion.div className="absolute w-24 h-24 top-[5%] left-[45%] bg-black/40 backdrop-blur-xl rounded-full shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/20 flex items-center justify-center text-5xl z-15 transform-gpu"
+      initial={{ scale: 0, opacity: 0, y: -50 }} animate={{ scale: 1, opacity: 1, y: [0, -20, 0], rotate: [-10, 10, -10] }} transition={{ delay: 1.8, duration: 2, y: { duration: 3, repeat: Infinity, ease: "easeInOut" }, rotate: { duration: 4, repeat: Infinity, ease: "easeInOut" } }}>
+       ☕
+    </motion.div>
+
+    {/* Floating Git Commit Badge */}
+    <motion.div className="absolute px-6 py-3 bottom-[25%] right-[28%] bg-green-500/90 backdrop-blur-md rounded-xl shadow-[0_20px_50px_rgba(0,255,0,0.2)] border border-green-300/50 flex items-center gap-3 z-25 transform-gpu"
+      initial={{ scale: 0, opacity: 0, x: 50, rotateX: 45 }} animate={{ scale: 1, opacity: 1, y: [0, 10, 0], rotate: [5, -5, 5], rotateY: [10, -10, 10] }} transition={{ delay: 2.0, duration: 2, y: { duration: 4.5, repeat: Infinity, ease: "easeInOut" }, rotate: { duration: 5.5, repeat: Infinity, ease: "easeInOut" } }}>
+       <CheckCircle2 size={24} className="text-white" />
+       <span className="text-white font-bold font-mono tracking-tight text-sm">git push --force</span>
+    </motion.div>
+
+    {/* Floating Bug Badge */}
+    <motion.div className="absolute px-4 py-4 top-[35%] left-[25%] bg-red-500/90 backdrop-blur-md rounded-full shadow-[0_20px_50px_rgba(255,0,0,0.3)] border border-red-300/50 flex items-center gap-2 z-25 transform-gpu"
+      initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1, y: [0, -15, 0], rotate: [-15, 15, -15] }} transition={{ delay: 2.2, duration: 2, y: { duration: 3.8, repeat: Infinity, ease: "easeInOut" }, rotate: { duration: 4.2, repeat: Infinity, ease: "easeInOut" } }}>
+       <span className="text-white text-2xl drop-shadow-md">🐛</span>
+       <div className="absolute -right-2 -top-2 bg-green-500 rounded-full p-1 border border-white">
+           <CheckCircle2 size={12} className="text-white relative z-10" />
+       </div>
+    </motion.div>
+
+    {/* macOS DOCK PPLG EDITION */}
+    <motion.div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/40 backdrop-blur-2xl border border-white/40 rounded-3xl px-6 py-4 flex gap-4 shadow-[0_30px_60px_rgba(0,0,0,0.4)] z-30"
        initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1, type: "spring", bounce: 0.5 }}
     >
-        <div className="w-20 h-20 bg-gradient-to-bl from-blue-400 to-blue-600 rounded-2xl shadow-lg border border-white/20 flex items-center justify-center transition-transform hover:-translate-y-4 cursor-pointer hover:scale-110"><Folder size={40} color="white" fill="white"/></div>
-        <div className="w-20 h-20 bg-gradient-to-tr from-pink-500 to-orange-400 rounded-2xl shadow-lg border border-white/20 flex items-center justify-center transition-transform hover:-translate-y-4 cursor-pointer hover:scale-110"><ImageIcon size={40} color="white"/></div>
-        <div className="w-20 h-20 bg-gradient-to-bl from-green-400 to-[#1db954] rounded-2xl shadow-lg border border-white/20 flex items-center justify-center transition-transform hover:-translate-y-4 cursor-pointer hover:scale-110"><Music size={40} color="white"/></div>
+        {/* Xcode */}
+        <div className="w-20 h-20 bg-gradient-to-tr from-blue-400 to-blue-300 rounded-2xl shadow-lg border border-white/20 p-2 transition-transform hover:-translate-y-4 cursor-pointer hover:scale-110 flex items-center justify-center">
+            <img src="https://cdn.jim-nielsen.com/macos/512/xcode-2020-11-11.png?rf=1024" className="w-full h-full object-contain drop-shadow-md" />
+        </div>
+        {/* Android Studio */}
+        <div className="w-20 h-20 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-lg border border-white/20 p-2 transition-transform hover:-translate-y-4 cursor-pointer hover:scale-110 flex items-center justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Android_Studio_icon_%282023%29.svg" className="w-full h-full object-contain drop-shadow-md" />
+        </div>
+        {/* NetBeans */}
+        <div className="w-20 h-20 bg-white rounded-2xl shadow-lg border border-white/20 p-2 transition-transform hover:-translate-y-4 cursor-pointer hover:scale-110 flex items-center justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" className="w-full h-full object-contain drop-shadow-md" />
+        </div>
+        {/* Laragon */}
+        <div className="w-20 h-20 bg-gradient-to-tr from-cyan-400 to-blue-500 rounded-2xl shadow-lg border border-white/20 p-2 transition-transform hover:-translate-y-4 cursor-pointer hover:scale-110 flex items-center justify-center text-white font-extrabold text-5xl font-serif italic drop-shadow-lg">
+            L
+        </div>
+        <div className="w-px h-16 bg-white/50 mx-2 self-center"></div>
+        {/* Adobe After Effects */}
+        <div className="w-20 h-20 bg-[#00005b] rounded-2xl shadow-lg border border-white/20 p-3 transition-transform hover:-translate-y-4 cursor-pointer hover:scale-110 flex items-center justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" className="w-full h-full object-contain drop-shadow-md" />
+        </div>
+        {/* DaVinci Resolve */}
+        <div className="w-20 h-20 bg-black rounded-2xl shadow-lg border border-white/20 p-2 transition-transform hover:-translate-y-4 cursor-pointer hover:scale-110 flex items-center justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/DaVinci_Resolve_Studio.png" className="w-full h-full object-contain drop-shadow-md scale-110" />
+        </div>
         <div className="w-px h-16 bg-white/50 mx-2 self-center"></div>
         <div className="w-20 h-20 bg-zinc-900 rounded-2xl shadow-lg border border-white/20 flex items-center justify-center transition-transform hover:-translate-y-4 cursor-pointer hover:scale-110"><Search size={40} color="white"/></div>
     </motion.div>
