@@ -1,0 +1,4276 @@
+{
+  "timestamp": "2026-02-22T14:40:29.691Z",
+  "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+  "eventCount": 59,
+  "events": [
+    {
+      "timestamp": "2026-02-22T14:31:29.868Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:31:29.868Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\components\\LyricsDisplay.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\components\\LyricsDisplay.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:31:29.868Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\components\\SpotifyWidget.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\components\\SpotifyWidget.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:31:53.653Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 380,
+        "character": 136
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:31:54.097Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:31:54.098Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\components\\LyricsDisplay.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\components\\LyricsDisplay.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:31:54.098Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\components\\SpotifyWidget.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\components\\SpotifyWidget.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:31:56.833Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 380,
+        "character": 136
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T14:31:56.834Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 380,
+        "character": 136
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:31:56.971Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 380,
+        "character": 135
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "3",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T14:31:57.954Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 380,
+        "character": 136
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:31:57.956Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 380,
+        "character": 136
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:01.082Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 380,
+        "character": 136
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T14:32:01.083Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 380,
+        "character": 136
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:01.889Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 380,
+        "character": 135
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "6",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T14:32:02.807Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 380,
+        "character": 136
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:02.808Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 380,
+        "character": 136
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:04.739Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:04.889Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\components\\LyricsDisplay.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\components\\LyricsDisplay.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:05.106Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\components\\SpotifyWidget.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\components\\SpotifyWidget.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:54.474Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 700,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 400,
+        "character": 2
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 53,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " onReplay={handleReplay} onExport={handleExportVideo}",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 52,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "\" />}\n        {scene === 8 && <Scene8End key=\"scene8",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "28",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 26,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " && scene > 0 && scene < 8",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "d).\"",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 95,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "at video secara native dengan Remotion akan me-rewrite total sistem (time-based JS ke frame-bas",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 20,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "angkat Anda.\\n\\nMemb",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 13,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ime di GPU pe",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 69,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Win+Alt+R) sambil menekan 'Mulai Render' karena berjalan secara real-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 58,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "unakan aplikasi OBS Studio atau Screen Recorder bawaan OS ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "g",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "kan me",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 14,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "a merekomendas",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 57,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ert(\"Untuk menyimpan video DOM Animation Framer Motion, s",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 142,
+          "rangeLength": 0,
+          "lineCountDelta": 8,
+          "likelyAI": true,
+          "changeText": "laying(false);\n    setScene(0);\n    setTimeout(() => {\n      handleStart();\n    }, 100);\n  };\n\n  const handleExportVideo = async () => {\n    a",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 32,
+          "rangeLength": 0,
+          "lineCountDelta": 2,
+          "likelyAI": false,
+          "changeText": "\n\n  const handleReplay = () => {",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": ";\n  }",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 24,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": ");\n    setIsPlaying(true",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ": any)",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "(",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Screen",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "En",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ":",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "28.00",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ", ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "8",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 9,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "8",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 11,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "S",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 30,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 16,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 11,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 9,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ".",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "o",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ot",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Re",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "server",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "as",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 18,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "i",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "n",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "hk",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ibu",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ", ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " asl",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "y",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "FPS",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " 4K 6",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "o",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "mo",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "R",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ring",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "nd",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " r",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "it",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 23,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "kua",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "n",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "g",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 8,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Jika",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 8,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "browser.",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 8,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "internal",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Record",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Screen",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ka",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "n",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 8,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ngg",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "\"",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "baga",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "s",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "mpa",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "S",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 24,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 9,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "tu",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "F",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "er",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ce",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "d ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 29,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "x-w-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 11,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 7,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "8",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 7,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 10,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "m",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 107,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 7,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "/",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "t",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "bu",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " Video",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ebaga",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "mpan",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "/>",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "nsform\"",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-tr",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "o",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "rans",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "y-1",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "slate",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ra",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "r:",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 9,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "group-hov",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 10,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "size={24} ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 8,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Download",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "50\"",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-400",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 7,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-bl",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "bord",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 7,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "r",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "bord",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ")",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ",0.",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "9,23",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 17,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "0px_30px_rgba(37,",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "0_",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 8,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "dow",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "h",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 8,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "05",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ":sc",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "all hov",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ition",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ran",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "l",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "d-2",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "round",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "d",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "o",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "white",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-500 ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 15,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ur",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ":to-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "hove",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 8,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "500",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "lue",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 9,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "hover:fro",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "600",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "o-purpl",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ue-600",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "m",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "r",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "o-r",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "t",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "e",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "d",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "bg-g",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "y-4",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "x-8 ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "3",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ter gap",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ce",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ems",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " i",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 8,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "group fl",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 16,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "t",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "o",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 24,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Ex",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 29,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ck",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Cl",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 14,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 15,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 7,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "but",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "but",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 12,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " Ulangi Lagi",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "n-500\" ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "rat",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "rm d",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "f",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ran",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "n",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "si",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "tra",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "18",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "a",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 15,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "group-hover:-ro",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 19,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "RotateCcw size={24}",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 19,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "dow-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "h",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "e/10",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "h",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "de",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 9,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "bo",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 9,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-105 bord",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "al",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "r:",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "hov",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "a",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "i",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 9,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "i",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "n",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 22,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " t",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "x",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 8,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "d",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "round",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "t",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "h",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 7,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "x",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-700 t",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ":bg-zin",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "hov",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "8",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 15,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "bg",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "y-4",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 21,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "x-8",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-3",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 10,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "g",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "er",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ems-ce",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "i",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "flex",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 8,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "u",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 9,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "\"gr",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "classN",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "l",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "nRe",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 8,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ck",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Cl",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "o",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "but",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 41,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ex",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 12,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "f",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 1,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "p>\n",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "me.<",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 9,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ara real-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "s",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "er",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "n",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 15,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "si",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ber",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "nangan",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "\">K",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "b",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "m",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "medi",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "font",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 6,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "zinc",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "x",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 14,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 19,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "p",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 21,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "i!",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "s",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 17,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "l",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 8,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Video",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 15,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 10,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "r",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "mb-2 ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "5",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 13,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "/div>\n      <",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " /",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 23,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "_rgba(255,255,255,0.5)]",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "p",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 13,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "shadow-[0_0_1",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 9,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "hite drop",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "t",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 10,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ssName=\"te",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 12,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "size={48} cl",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "e2",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 53,
+          "rangeLength": 2,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "[0_0_50px_rgba(255,255,255,0.1)]\">\n        <CheckCirc",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "shado",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 28,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "center border border-white/2",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "justify",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 9,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ms-center",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "t",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 10,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "e/10 flex ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " bg-whi",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "d-3x",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ound",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 11,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "24 h-24 mb-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 28,
+          "rangeLength": 1,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "10\">\n      <div className=\"w",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "nter z",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 18,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "flex flex-col item",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "0.5",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ce",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "u",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ng\", b",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 9,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ype: \"spr",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 11,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "1",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "sca",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": ".9",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 7,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "sca",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "3x",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ur",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 10,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "b",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "5",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 15,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "20",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 4,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-900",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "l",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 7,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "o-p",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": " ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 7,
+          "rangeLength": 5,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "20 via-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 17,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "o-t from-blue-900",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "-",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "adien",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "g",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "\n  ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 5,
+          "rangeLength": 0,
+          "lineCountDelta": 1,
+          "likelyAI": false,
+          "changeText": "\n    ",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 10,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 22,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "{ onReplay, onExport }",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 2,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 3,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "8En",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 15,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 12,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "ee",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 2,
+          "rangeLength": 4,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "Sc",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 3,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "d",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 10,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "E",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "+",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 0,
+          "rangeLength": 7,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        },
+        {
+          "textLength": 1,
+          "rangeLength": 1,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "8",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T14:32:54.476Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 700,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 400,
+        "character": 2
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:54.564Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 700,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 400,
+        "character": 2
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:54.565Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 700,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 400,
+        "character": 2
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:54.572Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 700,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 0,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T14:32:54.896Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_open",
+      "file": "\\373",
+      "relativePath": "\\373",
+      "language": "typescriptreact",
+      "lineCount": 27,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:54.913Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_open",
+      "file": "\\374",
+      "relativePath": "\\374",
+      "language": "typescriptreact",
+      "lineCount": 2,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:54.924Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_open",
+      "file": "\\375",
+      "relativePath": "\\375",
+      "language": "typescriptreact",
+      "lineCount": 4,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:54.930Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_open",
+      "file": "\\376",
+      "relativePath": "\\376",
+      "language": "typescriptreact",
+      "lineCount": 1,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:54.943Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_open",
+      "file": "\\377",
+      "relativePath": "\\377",
+      "language": "typescriptreact",
+      "lineCount": 1,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:54.953Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_open",
+      "file": "\\378",
+      "relativePath": "\\378",
+      "language": "typescriptreact",
+      "lineCount": 1,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:32:55.920Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:43.798Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 580,
+        "character": 101
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 31892,
+          "rangeLength": 32078,
+          "lineCountDelta": 458,
+          "likelyAI": false,
+          "changeText": "🚀\n\n                      #KelulusanSMK7Samarinda #EverythingUAreHindia #LulusSMK #FutureCoder\"\n                    </p>\n                    <p className=\"text-[12px] text-zinc-500 font-medium\">98w</p>\n                 </div>\n              </div>\n              \n              <div className=\"mt-8 flex gap-4 border-t border-zinc-800/80 pt-6\">\n                 <div className=\"w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[2px] shrink-0\">\n                   <img src={profilePicUrl} className=\"w-full h-full rounded-full object-cover border-2 border-black\" />\n                 </div>\n                 <div className=\"flex-1\">\n                    <p className=\"text-[14px] leading-relaxed\"><span className=\"font-semibold mr-2\">actone.pplg</span>Slide keempat misterius</p>\n                    <div className=\"flex gap-4 text-[12px] text-zinc-500 font-medium mt-1 mb-2\">\n                       <p>98w</p>\n                       <p className=\"font-bold cursor-pointer\">Reply</p>\n                    </div>\n                    <p className=\"text-[12px] text-zinc-500 font-medium flex items-center gap-3 mt-4 cursor-pointer\">\n                       <span className=\"w-8 h-px bg-zinc-600 block\"></span> View replies (1)\n                    </p>\n                 </div>\n                 <Heart size={14} className=\"text-zinc-500 cursor-pointer mt-1\" />\n              </div>\n           </div>\n\n           {/* View insights button - Fixed bottom part 1 */}\n           <div className=\"border-t border-zinc-800 bg-black py-3 px-4 flex items-center justify-between shrink-0\">\n              <p className=\"text-blue-500 font-semibold text-[14px] cursor-pointer hover:text-white transition\">View insights</p>\n              <button className=\"bg-[#0057f0] hover:bg-[#004bd1] text-white px-6 py-1.5 rounded-lg font-semibold text-[14px] transition\">Boost post</button>\n           </div>\n\n           {/* Footer - Fixed bottom part 2 */}\n           <div className=\"border-t border-...[TRUNCATED]",
+          "wasTruncated": true
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T14:34:43.803Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 581,
+        "character": 97
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:43.894Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "\\373",
+      "relativePath": "\\373",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:43.894Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "\\374",
+      "relativePath": "\\374",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:43.894Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "\\375",
+      "relativePath": "\\375",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:43.894Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "\\376",
+      "relativePath": "\\376",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:43.894Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "\\377",
+      "relativePath": "\\377",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:43.894Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "\\378",
+      "relativePath": "\\378",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:44.171Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 581,
+        "character": 97
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:44.173Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 581,
+        "character": 97
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:44.905Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:46.230Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\components\\LyricsDisplay.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\components\\LyricsDisplay.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:34:46.452Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\components\\SpotifyWidget.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\components\\SpotifyWidget.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:36:24.880Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_open",
+      "file": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "relativePath": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "language": "markdown",
+      "lineCount": 13,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:36:24.907Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "relativePath": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "language": "markdown",
+      "lineCount": 12,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 581,
+        "character": 97
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 620,
+          "rangeLength": 599,
+          "lineCountDelta": 11,
+          "likelyAI": false,
+          "changeText": "# Task Checklist\r\n\r\n- [x] Initialize React + Vite project\r\n- [x] Configure Tailwind CSS & Framer Motion\r\n- [x] Implement core sequences (Scene 1-7) synced to 155 BPM track\r\n- [x] Add Premium Apple Music 3D UI (Scene 2)\r\n- [x] Add Premium 3D Bento Layout (Scene 4)\r\n- [ ] Implement After Effects-style advanced 3D motion across all scenes (Continuous floating, extreme Z-depth, Chromatic Aberration)\r\n- [ ] Add \"Replay\" and \"Save Video\" functionality to the end screen\r\n- [ ] Implement browser-native screen recording (MediaRecorder API) to export MP4/WebM directly\r\n- [ ] Finish and polish the updated 1920x1080 canvas\r\n",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T14:36:24.907Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "relativePath": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "language": "markdown",
+      "lineCount": 12,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 581,
+        "character": 97
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:36:24.975Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "relativePath": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "language": "markdown",
+      "lineCount": 12,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 581,
+        "character": 97
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:36:24.976Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "relativePath": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "language": "markdown",
+      "lineCount": 12,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 581,
+        "character": 97
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:36:25.375Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md.resolved",
+      "relativePath": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md.resolved",
+      "language": "plaintext",
+      "lineCount": 12,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 581,
+        "character": 97
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 561,
+          "rangeLength": 540,
+          "lineCountDelta": 8,
+          "likelyAI": false,
+          "changeText": "- [x] Configure Tailwind CSS & Framer Motion\r\n- [x] Implement core sequences (Scene 1-7) synced to 155 BPM track\r\n- [x] Add Premium Apple Music 3D UI (Scene 2)\r\n- [x] Add Premium 3D Bento Layout (Scene 4)\r\n- [ ] Implement After Effects-style advanced 3D motion across all scenes (Continuous floating, extreme Z-depth, Chromatic Aberration)\r\n- [ ] Add \"Replay\" and \"Save Video\" functionality to the end screen\r\n- [ ] Implement browser-native screen recording (MediaRecorder API) to export MP4/WebM directly\r\n- [ ] Finish and polish the updated 1920x1080 canvas\r\n",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T14:39:24.950Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "relativePath": "c\\Users\\HP VICTUS\\.gemini\\antigravity\\brain\\ae5457d5-c2ab-4a86-8581-4bf974326b60\\task.md",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:40:25.530Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 10,
+        "character": 25
+      },
+      "selectionLength": 0,
+      "changes": [
+        {
+          "textLength": 6,
+          "rangeLength": 0,
+          "lineCountDelta": 0,
+          "likelyAI": false,
+          "changeText": "kelact",
+          "wasTruncated": false
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-02-22T14:40:25.531Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": true,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 10,
+        "character": 25
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:40:26.409Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:40:26.559Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 10,
+        "character": 31
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:40:26.560Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "file_edit",
+      "file": "d\\Project\\kelact\\src\\App.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\App.tsx",
+      "language": "typescriptreact",
+      "lineCount": 698,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": {
+        "line": 10,
+        "character": 31
+      },
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:40:28.670Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\components\\LyricsDisplay.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\components\\LyricsDisplay.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    },
+    {
+      "timestamp": "2026-02-22T14:40:28.899Z",
+      "sessionId": "9920d294-7fec-42ee-8a02-e06d83370caf",
+      "eventType": "diagnostic_change",
+      "file": "d\\Project\\kelact\\src\\components\\SpotifyWidget.tsx",
+      "relativePath": "d\\Project\\kelact\\src\\components\\SpotifyWidget.tsx",
+      "language": "unknown",
+      "lineCount": 0,
+      "isDirty": false,
+      "isUntitled": false,
+      "cursorPosition": null,
+      "selectionLength": 0,
+      "changes": []
+    }
+  ],
+  "metadata": {
+    "version": "1.3.0",
+    "trigger": "smart-backup",
+    "memoryUsage": 141748
+  }
+}
