@@ -866,9 +866,29 @@ export default function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [scene, setScene] = useState(0); 
   const [isRecording, setIsRecording] = useState(false);
+  const [scale, setScale] = useState(1);
   const audioRef = useRef<HTMLAudioElement>(null);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<BlobPart[]>([]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenW = window.innerWidth;
+      const screenH = window.innerHeight;
+      const targetRatio = 16 / 9;
+      const currentRatio = screenW / screenH;
+      
+      if (currentRatio > targetRatio) {
+        setScale(screenH / 1080);
+      } else {
+        setScale(screenW / 1920);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (!isPlaying) return;
@@ -948,12 +968,17 @@ export default function App() {
   };
 
   return (
-    <div className={`w-full h-screen bg-black font-sans overflow-hidden select-none relative antialiased ${isRecording || isPlaying ? 'cursor-none' : ''}`}>
+    <div className={`w-full h-screen bg-black flex items-center justify-center font-sans overflow-hidden select-none relative antialiased ${isRecording || isPlaying ? 'cursor-none' : ''}`}>
       
-      {/* Audio element untuk BGM */}
-      <audio ref={audioRef} src={ASSETS.audioTrack} preload="auto" />
+      {/* 16:9 Safe Area Canvas */}
+      <div 
+        className="relative shrink-0 overflow-hidden bg-black shadow-2xl" 
+        style={{ width: 1920, height: 1080, transform: `scale(${scale})`, transformOrigin: 'center center' }}
+      >
+        {/* Audio element untuk BGM */}
+        <audio ref={audioRef} src={ASSETS.audioTrack} preload="auto" />
 
-      {/* Font & Keyframes */}
+        {/* Font & Keyframes */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Permanent+Marker&display=swap');
         div { font-family: 'Inter', sans-serif; }
@@ -1022,8 +1047,13 @@ export default function App() {
         {scene === 7 && <Scene7Bridge key="scene7" onReplay={handleStart} onRecord={handleRecord} isRecording={isRecording} />}
       </AnimatePresence>
       
-      {/* Device Orientation Warning (Portrait to Landscape) */}
-      <div className="portrait-overlay absolute inset-0 z-[999] bg-zinc-950 text-white flex-col items-center justify-center p-8 text-center backdrop-blur-xl">
+        {/* Cinematic Film Grain Overlay */}
+        <div className="pointer-events-none absolute inset-0 z-40" style={{ background: 'radial-gradient(circle, transparent 60%, rgba(0,0,0,0.4) 100%)' }}></div>
+        <div className="pointer-events-none absolute inset-0 z-40 opacity-[0.06] mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`}} />
+      </div>
+
+      {/* Device Orientation Warning (Portrait to Landscape) - Fullscreen Outside Canvas */}
+      <div className="portrait-overlay fixed inset-0 z-[9999] bg-zinc-950 text-white flex-col items-center justify-center p-8 text-center backdrop-blur-xl">
          <motion.div animate={{ rotate: 90 }} transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", repeatType: "reverse" }} className="mb-6">
             <Monitor size={64} className="text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]" />
          </motion.div>
@@ -1031,9 +1061,6 @@ export default function App() {
          <p className="text-zinc-400 font-medium max-w-sm leading-relaxed">Pengalaman terbaik untuk menonton Memori Kelulusan ini adalah dalam mode Lanskap (Horizontal).</p>
       </div>
 
-      {/* Cinematic Film Grain Overlay */}
-      <div className="pointer-events-none absolute inset-0 z-40" style={{ background: 'radial-gradient(circle, transparent 60%, rgba(0,0,0,0.4) 100%)' }}></div>
-      <div className="pointer-events-none absolute inset-0 z-40 opacity-[0.06] mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`}} />
     </div>
   );
 }
