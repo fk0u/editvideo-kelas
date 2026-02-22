@@ -780,7 +780,7 @@ const Scene6MacOS = () => (
 );
 
 // --- SCENE 7: [0:25 - 0:28] "Seada-adanya, sekurang-kurangnya" (Bridge/Outro 3D Cinematic) ---
-const Scene7Bridge = ({ onReplay, onRecord }: { onReplay: () => void, onRecord: () => void }) => {
+const Scene7Bridge = ({ onReplay, onRecord, isRecording }: { onReplay: () => void, onRecord: () => void, isRecording: boolean }) => {
   const [bgIndex, setBgIndex] = useState(0);
 
   useEffect(() => {
@@ -843,15 +843,17 @@ const Scene7Bridge = ({ onReplay, onRecord }: { onReplay: () => void, onRecord: 
       <div className="flex flex-col items-center mt-20 z-20 relative">
         <p className="text-xl text-zinc-500 tracking-widest uppercase font-bold mb-8">SMK Negeri 7 Samarinda • 2026</p>
         
-        {/* Playback Controls (Displayed only at end) */}
-        <motion.div className="flex gap-6 mt-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 3 }}>
-           <button onClick={onReplay} className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-full flex items-center gap-3 backdrop-blur-md border border-white/20 transition-all hover:scale-105 active:scale-95 shadow-xl">
-              <RefreshCw size={24}/> Ulangi Lagi
-           </button>
-           <button onClick={onRecord} className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-full flex items-center gap-3 shadow-[0_0_40px_rgba(59,130,246,0.6)] border border-white/30 transition-all hover:scale-105 active:scale-95">
-              <Video size={24}/> Simpan Sebagai Video
-           </button>
-        </motion.div>
+        {/* Playback Controls (Displayed only at end, hidden during recording) */}
+        {!isRecording && (
+          <motion.div className="flex gap-6 mt-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 3 }}>
+             <button onClick={onReplay} className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-full flex items-center gap-3 backdrop-blur-md border border-white/20 transition-all hover:scale-105 active:scale-95 shadow-xl">
+                <RefreshCw size={24}/> Ulangi Lagi
+             </button>
+             <button onClick={onRecord} className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-full flex items-center gap-3 shadow-[0_0_40px_rgba(59,130,246,0.6)] border border-white/30 transition-all hover:scale-105 active:scale-95">
+                <Video size={24}/> Simpan Sebagai Video
+             </button>
+          </motion.div>
+        )}
       </div>
     </motion.div>
   </motion.div>
@@ -946,7 +948,7 @@ export default function App() {
   };
 
   return (
-    <div className="w-full h-screen bg-black font-sans overflow-hidden select-none relative antialiased">
+    <div className={`w-full h-screen bg-black font-sans overflow-hidden select-none relative antialiased ${isRecording || isPlaying ? 'cursor-none' : ''}`}>
       
       {/* Audio element untuk BGM */}
       <audio ref={audioRef} src={ASSETS.audioTrack} preload="auto" />
@@ -958,6 +960,10 @@ export default function App() {
         .marker-font { font-family: 'Permanent Marker', cursive; }
         .animate-spin-slow { animation: spin 8s linear infinite; }
         .animate-pulse-slow { animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        .portrait-overlay { display: none; }
+        @media screen and (orientation: portrait) {
+          .portrait-overlay { display: flex !important; }
+        }
         @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
         @keyframes pulse { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.4; } }
       `}</style>
@@ -1013,17 +1019,17 @@ export default function App() {
         {scene === 4 && <Scene4Bento key="scene4" />}
         {scene === 5 && <Scene5IGStory key="scene5" />}
         {scene === 6 && <Scene6MacOS key="scene6" />}
-        {scene === 7 && <Scene7Bridge key="scene7" onReplay={handleStart} onRecord={handleRecord} />}
+        {scene === 7 && <Scene7Bridge key="scene7" onReplay={handleStart} onRecord={handleRecord} isRecording={isRecording} />}
       </AnimatePresence>
       
-      {/* Recording Indicator */}
-      <AnimatePresence>
-        {isRecording && (
-          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="absolute top-8 left-1/2 -translate-x-1/2 bg-red-600/90 text-white px-6 py-2 rounded-full font-bold uppercase tracking-widest text-sm flex items-center gap-3 shadow-[0_0_20px_rgba(220,38,38,0.6)] z-[100] border border-red-400/50 backdrop-blur-md">
-            <div className="w-3 h-3 bg-white rounded-full animate-pulse shadow-[0_0_10px_white]"></div> Merekam Video... (Tunggu 29Dtk)
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Device Orientation Warning (Portrait to Landscape) */}
+      <div className="portrait-overlay absolute inset-0 z-[999] bg-zinc-950 text-white flex-col items-center justify-center p-8 text-center backdrop-blur-xl">
+         <motion.div animate={{ rotate: 90 }} transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", repeatType: "reverse" }} className="mb-6">
+            <Monitor size={64} className="text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]" />
+         </motion.div>
+         <h2 className="text-3xl font-black mb-4 uppercase tracking-widest text-[#4ade80]">Putar Layar Anda</h2>
+         <p className="text-zinc-400 font-medium max-w-sm leading-relaxed">Pengalaman terbaik untuk menonton Memori Kelulusan ini adalah dalam mode Lanskap (Horizontal).</p>
+      </div>
 
       {/* Cinematic Film Grain Overlay */}
       <div className="pointer-events-none absolute inset-0 z-40" style={{ background: 'radial-gradient(circle, transparent 60%, rgba(0,0,0,0.4) 100%)' }}></div>
