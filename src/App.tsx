@@ -1,21 +1,21 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Pause, SkipForward, SkipBack, Shuffle, Repeat, Heart, MessageCircle, Send, Bookmark, MoreHorizontal, ChevronDown, Music, Image as ImageIcon, Search, LayoutGrid, MapPin, CheckCircle2, Folder, ArrowUpRight, ChevronLeft, ChevronRight, Mic2, MonitorSpeaker, ListMusic, Monitor } from 'lucide-react';
+import { Play, Pause, SkipForward, SkipBack, Shuffle, Repeat, Heart, MessageCircle, Send, Bookmark, MoreHorizontal, ChevronDown, Music, Image as ImageIcon, Search, LayoutGrid, MapPin, CheckCircle2, Folder, ArrowUpRight, ChevronLeft, ChevronRight, Mic2, MonitorSpeaker, ListMusic, Monitor, RefreshCw, Video, VideoOff } from 'lucide-react';
 
 import { LyricsDisplay } from './components/LyricsDisplay';
 
 // --- DUMMY ASSETS ---
 // (Modifikasi: Mengubah link unsplash menjadi picsum.photos sesuai instruksi user "Dilarang Ambil Asset dari Unsplash")
 const ASSETS = {
-  mpls: "https://lh3.googleusercontent.com/rd-d/ALs6j_Hd2Dnaac-Le0cm_fNR6FMhkgvOcFn5eNVWrVrrI2tKnCi150kKD-quAtVUk0TdhDNgewKC1yxwhwqPqPpVyF0ZnZDlqe12SrenOCQeE_SXK-HPGcZIfwhySl2XSFMLqxbPSB3FomuOLxGmegT0gaO-ZYZ4sf_bb-I2tK6T3carqaD5i47pIE28CvVSHGzguwLohxIMEgeWMFZ4IARh6n7UK51vBfqSNbYODRlW34DtumJP_9pAnMe0BVQ7ebZz1z6wt4fRDuEszMsGOdha0ShQsWq2KyUopwZlK-W0D8Tu2xFCBg3M2_1vJITTxvAmIiFxJjKYFpNF3bBeVFYYF3sTA0Wx9xKPTYs9ylBmjWLiDJtAKzoMeerwQKLdwFxiWBrWPG7efSSDMOVHNLljKXtjWMapyemZCKgwCq9LrSok0HJrVsCqxiHNhmcYN7Tnc2A0zdodVXxRWslbA2DB63GlCq66ZzuVN8AExDMuEs5gRnYvFznZpFnj_YRAA35i8PWxq_yvI5XJ9rEHGjoXMS_hObenjgPHokQ1tX2H4orF8ThLrRrTQArjb61JgbqdEmEmdMIaXypTmQin6WW1PTwGh50pafvvu3DytsvLNb2OqgKgRPbbHKZkm0lJFk9329MfLxB5FqbIPVyy6NqZ8cF-CqCBedEEiWAt4R4OZI8jclqLs8dOfXNcOSRKKk7LJWftTVdcnSREQjGArrEYcqWo5Wyo4uEgwWnBR6ZQODNJfhIbyz_JsRShtKyLWZyOmL0_tbOk3I_Mg7mKSQT9vSSRQlLJTTgOBD-iiCh0J9sow8m_yWDnxbDADcoVZnOr6v_jb__yR7ENw9eNwfY842UGX5VKRVGipd8x5UI8Pac8jXq8ryHzmaJi3GIWCBGebd5c565nENpUYUEhPplfC3TmQzdVRfdJNM4Nd12HBA9GZwEcsMtOwVeYe3HIfBRuCbCjssxYLoOEevq2DLuFMXLweuKqHJ4IbLtXNWhvgqjA0ucc1Hg64DMalezq7LZH16vt88VsPX8ANIozZF_Oka1OuV24aHXq2rMpqL3dvaxgBHOmn47-LmV1ezZi4ox5op9s1k4TilCxXXkYTP0Oa9aIxN9VO-M_luD10Ul93nOTLaNBXFrSshy8IBJWqZBjrYBz1lEG9qaJi7Z19_pUEQ=w800-h800?auditContext=forDisplay", 
-  studio: "https://lh3.googleusercontent.com/rd-d/ALs6j_FHfLbhrPgvN9RCkU-vnqO8_DgqNHweSzp7q5vBiKDrfRziV42qtxjgaEBG3LMx0FtnWe85PsQnqgp8VjeM6HVrtGNPfDdlMjjlAn12FE81WpDAygu7u4Jdl1cUT9C0DilSGxpynKTdVsc8dhmzMDY3kCbZG2uoTBhP_6z0DDuPu9_sVXAGKo0EPILjCWguEHSyF2uy_pfveTwW3aa_7yoD3YmMxHl9iqV_T7Q9nZM2gIESlaTHBMy56aAn2OhchbKKHev3QBj4hoKgRmnYKLS0QrC2gJlGRsa0QNvEsumjPDcij_6WStTZnaNyqIEG2lSxtO6VWCtMLK9n40GhZOxRHKkJtAwbnGaXVTtNXyzjdSdCO9EHf4pj1m7J3UXl-mDQO6RCdQufwULk3fulb_wuMYfR7J1YKJyAJgXMi03o1yHxhDB38nFFyZ6hrb8EDQRoSTohdB5YxIy5Q5TSmxQP9dVtXndIBDODuz7MVQWmO_v_zyvUfzKNHkEmGkPn0eMxMwuZHxPBXiAqfOYBTM-_tRuk2_cYrFHHJsIiDEZnkVWiHqze78cNTNTFKesOW2JBI1RR2OM1V9ocIxynsQ1Bgdgs8NrVdfKSspAAxTRcURLFy3f9cE4wjQPvOdCRIpTtcZXlCOlojjMUC17nDM1wnnyI5ATQ8IddwVE2-zpV11TFS0J0e0x1JaW4jTAlk9P9kQ3j23HFyKpRNV3cx1qt6wWwIiEUaeKOMxYW44eblCpr0QZ0t83aEKyRNNNHVL-xpqO3kqXtKheKF7_ltxfyYZtl2qG_xY2ZprEBalFbVUGeWIxS0q58WAFKf0_tLsCp90CNv8cF42o3UUbO26AIphheZEfA7zpgqQMTxPCCyRVpEjVP-d1_jcuxYstbiq9GVDl0DqA8rpI6DoDENkFDl3eADyJxbOMHUicqx9MJ1duAGeTq5RpekyhggyMv1dT50DUwZNLFpjFNyn9jsTu9I-JdPZi41-mMwtXdUJXOni2usH905B6IMGVSkMbuX2j5B6Oc2GSUMHUyDoutLn45Uvbxiau5qMM27PRyLuNYuNjDEbfZ5F-zn-7UjV73B1fd0xOg7MBqUV0cyO9GimJSql1EJm-1UkXlFdxxmspXDo0hMt9TL2kOYphK8PbaQPrl4-OomZEp8empiF6-dw=w800-h800?auditContext=forDisplay",
-  igVideo: "https://www.w3schools.com/html/mov_bbb.mp4", 
+  mpls: "/mpls.png", 
+  studio: "/studio.png",
+  igVideo: "/video.mp4#t=3", 
   albumArt: "https://resources.tidal.com/images/2f820858/3fcd/4b0c/9e88/fe9efde8fa3d/160x160.jpg",
   schoolBg: "https://picsum.photos/seed/schoolBg/1920/1080", 
   audioTrack: "https://s3.ustatik.com/audio.com.audio/transcoding/59/80/1857828603378059-1857828603398220-1857828617116437.mp3?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=F0E8U41NBMMW3Y027UTJ%2F20260222%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260222T123111Z&X-Amz-SignedHeaders=host&X-Amz-Expires=518400&X-Amz-Signature=92b5ccd4723deae83801858f367b0e6b98acd72453c5a887605da11f52511d4a",
   gallery: [
-    "https://lh3.googleusercontent.com/rd-d/ALs6j_Hd2Dnaac-Le0cm_fNR6FMhkgvOcFn5eNVWrVrrI2tKnCi150kKD-quAtVUk0TdhDNgewKC1yxwhwqPqPpVyF0ZnZDlqe12SrenOCQeE_SXK-HPGcZIfwhySl2XSFMLqxbPSB3FomuOLxGmegT0gaO-ZYZ4sf_bb-I2tK6T3carqaD5i47pIE28CvVSHGzguwLohxIMEgeWMFZ4IARh6n7UK51vBfqSNbYODRlW34DtumJP_9pAnMe0BVQ7ebZz1z6wt4fRDuEszMsGOdha0ShQsWq2KyUopwZlK-W0D8Tu2xFCBg3M2_1vJITTxvAmIiFxJjKYFpNF3bBeVFYYF3sTA0Wx9xKPTYs9ylBmjWLiDJtAKzoMeerwQKLdwFxiWBrWPG7efSSDMOVHNLljKXtjWMapyemZCKgwCq9LrSok0HJrVsCqxiHNhmcYN7Tnc2A0zdodVXxRWslbA2DB63GlCq66ZzuVN8AExDMuEs5gRnYvFznZpFnj_YRAA35i8PWxq_yvI5XJ9rEHGjoXMS_hObenjgPHokQ1tX2H4orF8ThLrRrTQArjb61JgbqdEmEmdMIaXypTmQin6WW1PTwGh50pafvvu3DytsvLNb2OqgKgRPbbHKZkm0lJFk9329MfLxB5FqbIPVyy6NqZ8cF-CqCBedEEiWAt4R4OZI8jclqLs8dOfXNcOSRKKk7LJWftTVdcnSREQjGArrEYcqWo5Wyo4uEgwWnBR6ZQODNJfhIbyz_JsRShtKyLWZyOmL0_tbOk3I_Mg7mKSQT9vSSRQlLJTTgOBD-iiCh0J9sow8m_yWDnxbDADcoVZnOr6v_jb__yR7ENw9eNwfY842UGX5VKRVGipd8x5UI8Pac8jXq8ryHzmaJi3GIWCBGebd5c565nENpUYUEhPplfC3TmQzdVRfdJNM4Nd12HBA9GZwEcsMtOwVeYe3HIfBRuCbCjssxYLoOEevq2DLuFMXLweuKqHJ4IbLtXNWhvgqjA0ucc1Hg64DMalezq7LZH16vt88VsPX8ANIozZF_Oka1OuV24aHXq2rMpqL3dvaxgBHOmn47-LmV1ezZi4ox5op9s1k4TilCxXXkYTP0Oa9aIxN9VO-M_luD10Ul93nOTLaNBXFrSshy8IBJWqZBjrYBz1lEG9qaJi7Z19_pUEQ=w800-h800?auditContext=forDisplay",
-    "https://lh3.googleusercontent.com/rd-d/ALs6j_FHfLbhrPgvN9RCkU-vnqO8_DgqNHweSzp7q5vBiKDrfRziV42qtxjgaEBG3LMx0FtnWe85PsQnqgp8VjeM6HVrtGNPfDdlMjjlAn12FE81WpDAygu7u4Jdl1cUT9C0DilSGxpynKTdVsc8dhmzMDY3kCbZG2uoTBhP_6z0DDuPu9_sVXAGKo0EPILjCWguEHSyF2uy_pfveTwW3aa_7yoD3YmMxHl9iqV_T7Q9nZM2gIESlaTHBMy56aAn2OhchbKKHev3QBj4hoKgRmnYKLS0QrC2gJlGRsa0QNvEsumjPDcij_6WStTZnaNyqIEG2lSxtO6VWCtMLK9n40GhZOxRHKkJtAwbnGaXVTtNXyzjdSdCO9EHf4pj1m7J3UXl-mDQO6RCdQufwULk3fulb_wuMYfR7J1YKJyAJgXMi03o1yHxhDB38nFFyZ6hrb8EDQRoSTohdB5YxIy5Q5TSmxQP9dVtXndIBDODuz7MVQWmO_v_zyvUfzKNHkEmGkPn0eMxMwuZHxPBXiAqfOYBTM-_tRuk2_cYrFHHJsIiDEZnkVWiHqze78cNTNTFKesOW2JBI1RR2OM1V9ocIxynsQ1Bgdgs8NrVdfKSspAAxTRcURLFy3f9cE4wjQPvOdCRIpTtcZXlCOlojjMUC17nDM1wnnyI5ATQ8IddwVE2-zpV11TFS0J0e0x1JaW4jTAlk9P9kQ3j23HFyKpRNV3cx1qt6wWwIiEUaeKOMxYW44eblCpr0QZ0t83aEKyRNNNHVL-xpqO3kqXtKheKF7_ltxfyYZtl2qG_xY2ZprEBalFbVUGeWIxS0q58WAFKf0_tLsCp90CNv8cF42o3UUbO26AIphheZEfA7zpgqQMTxPCCyRVpEjVP-d1_jcuxYstbiq9GVDl0DqA8rpI6DoDENkFDl3eADyJxbOMHUicqx9MJ1duAGeTq5RpekyhggyMv1dT50DUwZNLFpjFNyn9jsTu9I-JdPZi41-mMwtXdUJXOni2usH905B6IMGVSkMbuX2j5B6Oc2GSUMHUyDoutLn45Uvbxiau5qMM27PRyLuNYuNjDEbfZ5F-zn-7UjV73B1fd0xOg7MBqUV0cyO9GimJSql1EJm-1UkXlFdxxmspXDo0hMt9TL2kOYphK8PbaQPrl4-OomZEp8empiF6-dw=w800-h800?auditContext=forDisplay",
+    "/mpls.png",
+    "/studio.png",
     "/1770374436851.jpg",
     "/1770374400238.jpg",
     "/IMG_0027.jpg",
@@ -30,25 +30,33 @@ const ASSETS = {
 // --- SCENE 1: [0:00 - 0:03] "Cerita kita" (Intro) ---
 const Scene1Intro = () => (
   <motion.div 
-    className="w-full h-full relative flex items-center justify-center bg-zinc-900 overflow-hidden"
-    initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, filter: "blur(20px)" }} transition={{ duration: 0.5 }}
+    className="w-full h-full relative flex items-center justify-center bg-zinc-950 overflow-hidden" style={{ perspective: 1200 }}
+    initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, filter: "blur(30px)", scale: 1.2 }} transition={{ duration: 0.5 }}
   >
-    <div className="absolute inset-0 grid grid-cols-4 grid-rows-3 gap-2 p-2 opacity-30">
+    <motion.div className="absolute inset-0 grid grid-cols-4 grid-rows-3 gap-2 p-2 opacity-30 transform-gpu"
+      animate={{ scale: [1, 1.05, 1], rotateZ: [0, -1, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+    >
       {[...ASSETS.gallery, ASSETS.mpls, ASSETS.studio].map((img, i) => (
         <motion.div key={i} className="w-full h-full bg-zinc-800 overflow-hidden rounded-xl"
           initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: i * 0.05 }}
         >
-          <img src={img} alt="grid" className="w-full h-full object-cover grayscale" />
+          <img src={img} alt="grid" className="w-full h-full object-cover grayscale blur-[2px] transition-all duration-1000" />
         </motion.div>
       ))}
-    </div>
+    </motion.div>
 
     <motion.div className="z-20 w-full h-full flex flex-col justify-center items-center mix-blend-difference"
-      initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: "spring", bounce: 0.5 }}
+      initial={{ scale: 0.5, opacity: 0, rotateX: 45 }} animate={{ scale: 1, opacity: 1, rotateX: 0 }} transition={{ type: "spring", bounce: 0.6 }}
     >
       <motion.div animate={{ filter: ["invert(0%)", "invert(100%)", "invert(0%)"] }} transition={{ delay: 1, duration: 1.5 }} className="text-center relative w-full h-full flex items-center justify-center">
-        <h1 className="text-[15vw] font-black leading-none tracking-tighter text-white drop-shadow-2xl absolute top-[20%] left-[10%]">CERITA</h1>
-        <h1 className="text-[15vw] font-black leading-none tracking-tighter text-yellow-300 drop-shadow-2xl absolute bottom-[20%] right-[10%]">KITA</h1>
+        {/* RGB Split Chromatic Aberration Effect */}
+        <h1 className="text-[15vw] font-black leading-none tracking-tighter text-cyan-400 opacity-60 absolute top-[20%] left-[10.5%] z-0">CERITA</h1>
+        <h1 className="text-[15vw] font-black leading-none tracking-tighter text-red-500 opacity-60 absolute top-[20%] left-[9.5%] z-0">CERITA</h1>
+        <h1 className="text-[15vw] font-black leading-none tracking-tighter text-white drop-shadow-[0_20px_50px_rgba(255,255,255,0.4)] absolute top-[20%] left-[10%] z-10">CERITA</h1>
+        
+        <h1 className="text-[15vw] font-black leading-none tracking-tighter text-cyan-400 opacity-60 absolute bottom-[20%] right-[9.5%] z-0">KITA</h1>
+        <h1 className="text-[15vw] font-black leading-none tracking-tighter text-red-500 opacity-60 absolute bottom-[20%] right-[10.5%] z-0">KITA</h1>
+        <h1 className="text-[15vw] font-black leading-none tracking-tighter text-yellow-300 drop-shadow-[0_20px_50px_rgba(250,204,21,0.4)] absolute bottom-[20%] right-[10%] z-10">KITA</h1>
       </motion.div>
     </motion.div>
   </motion.div>
@@ -62,11 +70,25 @@ const Scene2MusicPlayer = () => (
     {/* Background ambient light */}
     <div className="absolute inset-0 bg-red-900/20 blur-[150px] z-0 transform-gpu" />
 
-    {/* Phone Device Frame */}
-    <motion.div className="w-[430px] h-[932px] bg-black rounded-[55px] border-[8px] border-zinc-800 shadow-[0_0_100px_rgba(250,36,60,0.3),inset_0_0_20px_rgba(255,255,255,0.1)] relative overflow-hidden z-10 flex flex-col will-change-transform" style={{ transformStyle: 'preserve-3d' }}
-      initial={{ rotateX: 20, rotateY: -15, scale: 0.8, y: 150, z: -200 }} 
-      animate={{ rotateX: 0, rotateY: 0, scale: 0.95, y: 0, z: 0 }} 
-      transition={{ duration: 1.5, type: "spring", bounce: 0.3 }}
+    {/* Phone Device Frame - Floating 3D */}
+    <motion.div className="w-[430px] h-[932px] bg-black rounded-[55px] border-[8px] border-zinc-800 shadow-[0_40px_100px_rgba(250,36,60,0.4),0_0_50px_rgba(250,36,60,0.2),inset_0_0_20px_rgba(255,255,255,0.1)] relative overflow-hidden z-10 flex flex-col will-change-transform" style={{ transformStyle: 'preserve-3d' }}
+      initial={{ rotateX: 60, rotateY: -30, rotateZ: -10, scale: 0.5, y: 300, z: -500, opacity: 0 }} 
+      animate={{ 
+        rotateX: [10, 5, 10], 
+        rotateY: [-5, 5, -5], 
+        rotateZ: [0, -2, 0],
+        scale: 0.95, 
+        y: [0, -15, 0], 
+        z: 0,
+        opacity: 1 
+      }} 
+      transition={{ 
+        duration: 1.8, type: "spring", bounce: 0.3,
+        rotateX: { duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.8 },
+        rotateY: { duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1.8 },
+        rotateZ: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1.8 },
+        y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1.8 }
+      }}
     >
       {/* Dynamic Island */}
       <div className="absolute top-4 left-1/2 -translate-x-1/2 w-[120px] h-[35px] bg-black rounded-full z-50 flex items-center justify-between px-3">
@@ -169,11 +191,28 @@ const Scene3PhotoReveal = () => {
   }, []);
 
   return (
-    <motion.div className="w-full h-full bg-[#0a0a0a] relative flex items-center justify-center overflow-hidden"
+    <motion.div className="w-full h-full bg-[#0a0a0a] relative flex items-center justify-center overflow-hidden" style={{ perspective: 1800 }}
       initial={{ opacity: 0, scale: 1.1 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}
     >
-      <div className="w-[1200px] h-[750px] bg-black border border-zinc-800 rounded-sm flex overflow-hidden shadow-[0_30px_100px_rgba(0,0,0,0.8)] relative"
-           style={{ zIndex: 10 }}>
+      {/* 3D Global Depth Wrapper for IG Post */}
+      <motion.div className="w-[1200px] h-[750px] bg-black border border-zinc-800 rounded-2xl flex overflow-hidden shadow-[0_50px_150px_rgba(0,0,0,0.9),0_0_30px_rgba(255,255,255,0.05)] relative transform-gpu"
+           style={{ zIndex: 10, transformStyle: 'preserve-3d' }}
+           initial={{ rotateX: -30, rotateY: 30, scale: 0.7, z: -500 }}
+           animate={{ 
+             rotateX: [-5, 8, -5], 
+             rotateY: [10, -5, 10], 
+             rotateZ: [-1, 2, -1],
+             scale: [0.98, 1, 0.98],
+             z: 0 
+           }}
+           transition={{ 
+             duration: 1.5, type: "spring", bounce: 0.4,
+             rotateX: { duration: 8, repeat: Infinity, ease: "easeInOut" },
+             rotateY: { duration: 7, repeat: Infinity, ease: "easeInOut" },
+             rotateZ: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+             scale: { duration: 5, repeat: Infinity, ease: "easeInOut" }
+           }}
+      >
         
         {/* Left: Carousel */}
         <div className="w-[65%] h-full bg-zinc-950 relative flex items-center overflow-hidden border-r border-zinc-800">
@@ -292,7 +331,7 @@ const Scene3PhotoReveal = () => {
              </div>
            </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Center Background Light Effect */}
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-0 pointer-events-none" />
@@ -415,11 +454,26 @@ const Scene5IGStory = () => {
   }, []);
 
   return (
-    <motion.div className="w-full h-full bg-[#050505] flex justify-center items-center relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, scale: 0.9 }}>
+    <motion.div className="w-full h-full bg-[#050505] flex justify-center items-center relative" style={{ perspective: 1800 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, scale: 0.9 }}>
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')] opacity-5" />
-      <motion.div className="w-[480px] h-[880px] bg-zinc-900 rounded-[3.5rem] border-[10px] border-zinc-950 overflow-hidden relative shadow-[0_0_150px_rgba(59,130,246,0.2)]"
-        initial={{ scale: 0.8, y: 150, rotateX: 10 }} animate={{ scale: 1, y: 0, rotateX: 0 }} transition={{ type: "spring", bounce: 0.4 }}
-        style={{ perspective: 1000 }}
+      
+      {/* 3D Floating IG Story */}
+      <motion.div className="w-[480px] h-[880px] bg-zinc-900 rounded-[3.5rem] border-[10px] border-zinc-950 overflow-hidden relative shadow-[0_50px_150px_rgba(59,130,246,0.2),inset_0_0_20px_rgba(255,255,255,0.05)] transform-gpu"
+        initial={{ scale: 0.5, y: 150, z: -400, rotateX: 30, rotateY: -20 }} 
+        animate={{ 
+          scale: 1, 
+          y: [0, -20, 0], 
+          z: 0, 
+          rotateX: [5, -5, 5], 
+          rotateY: [-5, 5, -5] 
+        }} 
+        transition={{ 
+          duration: 1.5, type: "spring", bounce: 0.4,
+          y: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+          rotateX: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+          rotateY: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+        }}
+        style={{ transformStyle: 'preserve-3d' }}
       >
         <video src={ASSETS.igVideo} autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-black/80 pointer-events-none" />
@@ -437,7 +491,7 @@ const Scene5IGStory = () => {
                </div>
                <div>
                  <p className="text-white font-bold text-sm flex items-center gap-1">actone.pplg <CheckCircle2 size={14} className="text-blue-500" fill="currentColor"/></p>
-                 <p className="text-white/70 text-xs font-medium">Minggu, 12 Mei • Kenangan</p>
+                 <p className="text-white/70 text-xs font-medium">♫ Hindia - Everything U Are</p>
                </div>
             </div>
           </div>
@@ -481,14 +535,29 @@ const Scene5IGStory = () => {
   );
 };
 
-// --- SCENE 6: [0:18 - 0:25] "Bahwa~ aku~~ pernah dicintai" (macOS Finder) ---
+// --- SCENE 6: [0:18 - 0:25] "Bahwa~ aku~~ pernah dicintai" (macOS Finder 3D Floating) ---
 const Scene6MacOS = () => (
-  <motion.div className="w-full h-full bg-cover bg-center flex items-center justify-center p-12 relative overflow-hidden" style={{ backgroundImage: `url(${ASSETS.schoolBg})` }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+  <motion.div className="w-full h-full bg-cover bg-center flex items-center justify-center p-12 relative overflow-hidden" style={{ backgroundImage: `url(${ASSETS.schoolBg})`, perspective: 1800 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
     <div className="absolute inset-0 bg-gradient-to-br from-blue-900/40 to-yellow-900/40 backdrop-blur-lg" />
 
     {/* Finder Window (Belakang) */}
-    <motion.div className="absolute w-full max-w-[1300px] h-[780px] top-[8%] left-[8%] bg-white/80 backdrop-blur-2xl rounded-2xl shadow-[0_40px_100px_rgba(0,0,0,0.5),0_0_0_1px_rgba(255,255,255,0.4)__inset] flex flex-col z-10 overflow-hidden"
-      initial={{ y: 200, scale: 0.9, opacity: 0, rotateX: 15 }} animate={{ y: 0, scale: 1, opacity: 1, rotateX: 0 }} transition={{ type: "spring", bounce: 0.3 }} style={{ perspective: 1200 }}
+    <motion.div className="absolute w-full max-w-[1300px] h-[780px] top-[8%] left-[8%] bg-white/80 backdrop-blur-2xl rounded-2xl shadow-[0_50px_150px_rgba(0,0,0,0.6),0_0_0_1px_rgba(255,255,255,0.4)__inset] flex flex-col z-10 overflow-hidden transform-gpu"
+      style={{ transformStyle: 'preserve-3d' }}
+      initial={{ y: 200, scale: 0.7, opacity: 0, rotateX: 25, z: -400 }} 
+      animate={{ 
+        y: [0, -10, 0], 
+        scale: 1, 
+        opacity: 1, 
+        rotateX: [2, -2, 2], 
+        rotateY: [-3, 3, -3],
+        z: 0 
+      }} 
+      transition={{ 
+        duration: 1.5, type: "spring", bounce: 0.3,
+        y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+        rotateX: { duration: 7, repeat: Infinity, ease: "easeInOut" },
+        rotateY: { duration: 8, repeat: Infinity, ease: "easeInOut" }
+      }}
     >
       <div className="h-14 bg-gradient-to-b from-white/60 to-white/40 border-b border-black/5 flex items-center px-5 justify-between select-none backdrop-blur-md">
         <div className="flex items-center gap-8">
@@ -516,9 +585,26 @@ const Scene6MacOS = () => (
       </div>
     </motion.div>
 
-    {/* Photo Viewer / Preview (Depan) */}
-    <motion.div className="absolute w-[800px] h-[650px] top-[12%] right-[8%] bg-zinc-100/95 backdrop-blur-3xl rounded-xl shadow-[0_50px_100px_rgba(0,0,0,0.5)] border border-white/50 flex flex-col z-10 overflow-hidden origin-bottom-right"
-      initial={{ scale: 0.5, opacity: 0, rotate: 10, y: 100 }} animate={{ scale: 1, opacity: 1, rotate: -2, y: 0 }} transition={{ type: "spring", delay: 0.8, bounce: 0.4 }}
+    {/* Photo Viewer / Preview (Depan 3D Floating) */}
+    <motion.div className="absolute w-[800px] h-[650px] top-[12%] right-[8%] bg-zinc-100/95 backdrop-blur-3xl rounded-xl shadow-[0_60px_200px_rgba(0,0,0,0.8)] border border-white/50 flex flex-col z-20 overflow-hidden origin-bottom-right transform-gpu"
+      style={{ transformStyle: 'preserve-3d' }}
+      initial={{ scale: 0.4, opacity: 0, rotate: 15, y: 200, z: -200, rotateX: 30 }} 
+      animate={{ 
+        scale: 1, 
+        opacity: 1, 
+        rotate: [-3, 1, -3], 
+        y: [0, -20, 0],
+        z: 60,
+        rotateX: [-5, 5, -5],
+        rotateY: [3, -3, 3]
+      }} 
+      transition={{ 
+        duration: 1.5, type: "spring", delay: 0.5, bounce: 0.4,
+        rotate: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+        y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+        rotateX: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+        rotateY: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+      }}
     >
       <div className="h-12 bg-gradient-to-b from-white to-gray-200 border-b border-gray-300 flex items-center justify-center relative select-none">
          <div className="absolute left-4 flex gap-2">
@@ -560,46 +646,95 @@ const Scene6MacOS = () => (
   </motion.div>
 );
 
-// --- SCENE 7: [0:25 - 0:28] "Seada-adanya, sekurang-kurangnya" (Bridge/Outro) ---
-const Scene7Bridge = () => (
-  <motion.div className="w-full h-full bg-[#050505] text-white flex flex-col items-center justify-center p-8 text-center relative overflow-hidden" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-    <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 animate-pulse-slow" />
-    <motion.div initial={{ y: 20, opacity: 0, filter: "blur(10px)" }} animate={{ y: 0, opacity: 1, filter: "blur(0px)" }} transition={{ delay: 0.5, duration: 2 }} className="space-y-6 relative z-10 w-full max-w-5xl">
-      <h2 className="text-6xl font-black tracking-tight leading-snug bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-white to-yellow-200 drop-shadow-lg">
-        "Seada-adanya,<br/>sekurang-kurangnya."
-      </h2>
-      <div className="h-1 w-32 bg-gradient-to-r from-blue-500 to-yellow-400 mx-auto my-12 rounded-full shadow-lg"></div>
+// --- SCENE 7: [0:25 - 0:28] "Seada-adanya, sekurang-kurangnya" (Bridge/Outro 3D Cinematic) ---
+const Scene7Bridge = ({ onReplay, onRecord }: { onReplay: () => void, onRecord: () => void }) => {
+  const [bgIndex, setBgIndex] = useState(0);
 
-      {/* Credits Section */}
-      <div className="grid grid-cols-3 gap-8 mt-16 text-left border-t border-white/10 pt-12">
-         <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.5, type: "spring" }}>
-            <p className="text-zinc-500 uppercase tracking-widest font-bold text-sm mb-2">Developer</p>
-            <p className="text-3xl font-black flex items-center gap-2"><ArrowUpRight className="text-blue-400" size={32}/> KOU</p>
-            <p className="text-blue-400 font-semibold mt-1">https://kou.it.com</p>
-         </motion.div>
-         <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.7, type: "spring" }}>
-            <p className="text-zinc-500 uppercase tracking-widest font-bold text-sm mb-2">Music Track</p>
-            <p className="text-3xl font-black flex items-center gap-2 line-clamp-1"><Music className="text-[#1DB954]" size={32}/> Everything u are</p>
-            <p className="text-zinc-300 font-medium mt-1">Hindia - Spotify Music</p>
-         </motion.div>
-         <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.9, type: "spring" }}>
-            <p className="text-zinc-500 uppercase tracking-widest font-bold text-sm mb-2">Inspirasi</p>
-            <p className="text-3xl font-black">TikTok Trends</p>
-            <p className="text-zinc-300 font-medium mt-1">Video memori kelulusan</p>
-         </motion.div>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBgIndex((prev) => (prev + 1) % ASSETS.gallery.length);
+    }, 1500);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <motion.div className="w-full h-full bg-[#050505] text-white flex flex-col items-center justify-center p-8 text-center relative overflow-hidden" 
+      initial={{ opacity: 0, scale: 1.2 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 2, ease: "easeOut" }}
+    >
+      {/* Photo Slideshow Background */}
+      <AnimatePresence mode="popLayout">
+        <motion.img 
+          key={bgIndex}
+          src={ASSETS.gallery[bgIndex]} 
+          className="absolute inset-0 w-full h-full object-cover grayscale mix-blend-screen z-0"
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 0.35, scale: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+        />
+      </AnimatePresence>
+
+      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 animate-spin-slow mix-blend-screen z-0" />
+      <motion.div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505] z-0" animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 10, repeat: Infinity }} />
+      
+      <motion.div initial={{ y: 50, opacity: 0, filter: "blur(20px)" }} animate={{ y: 0, opacity: 1, filter: "blur(0px)" }} transition={{ delay: 0.5, duration: 2, type: "spring" }} className="space-y-6 relative z-10 w-full max-w-5xl">
+         {/* 3D Title with RGB Split Effect */}
+         <div className="relative">
+            <h2 className="text-6xl font-black tracking-tight leading-snug text-cyan-400 opacity-60 absolute inset-0 translate-x-[2px] translate-y-[-2px]">"Seada-adanya,<br/>sekurang-kurangnya."</h2>
+            <h2 className="text-6xl font-black tracking-tight leading-snug text-red-500 opacity-60 absolute inset-0 translate-x-[-2px] translate-y-[2px]">"Seada-adanya,<br/>sekurang-kurangnya."</h2>
+            <h2 className="text-6xl font-black tracking-tight leading-snug relative bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-white to-yellow-200 drop-shadow-[0_20px_50px_rgba(255,255,255,0.4)]">
+              "Seada-adanya,<br/>sekurang-kurangnya."
+            </h2>
+         </div>
+        <div className="h-1 w-48 bg-gradient-to-r from-blue-500 via-white to-yellow-400 mx-auto my-14 rounded-full shadow-[0_0_20px_rgba(255,255,255,0.5)]"></div>
+
+        {/* Credits Section */}
+        <div className="grid grid-cols-3 gap-8 mt-16 text-left border-t border-white/10 pt-12">
+           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} className="flex flex-col gap-2">
+              <h4 className="text-blue-400 font-black uppercase tracking-widest text-sm drop-shadow-md">Produced By</h4>
+              <p className="text-2xl font-bold">KOU aka Ghani</p>
+              <p className="text-zinc-400 font-medium">Video Editor & Web Dev</p>
+           </motion.div>
+           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.5 }} className="flex flex-col gap-2">
+              <h4 className="text-purple-400 font-black uppercase tracking-widest text-sm drop-shadow-md">Music</h4>
+              <p className="text-2xl font-bold">Hindia</p>
+              <p className="text-zinc-400 font-medium">Everything U Are</p>
+           </motion.div>
+           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 2 }} className="flex flex-col gap-2">
+              <h4 className="text-yellow-400 font-black uppercase tracking-widest text-sm drop-shadow-md">Special Thanks</h4>
+              <p className="text-2xl font-bold">Class of 2026</p>
+              <p className="text-zinc-400 font-medium">Pengembangan Perangkat Lunak dan Gim</p>
+           </motion.div>
+        </div>
+
+      <div className="flex flex-col items-center mt-20 z-20 relative">
+        <p className="text-xl text-zinc-500 tracking-widest uppercase font-bold mb-8">SMK Negeri 7 Samarinda • 2026</p>
+        
+        {/* Playback Controls (Displayed only at end) */}
+        <motion.div className="flex gap-6 mt-4" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 3 }}>
+           <button onClick={onReplay} className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-full flex items-center gap-3 backdrop-blur-md border border-white/20 transition-all hover:scale-105 active:scale-95 shadow-xl">
+              <RefreshCw size={24}/> Ulangi Lagi
+           </button>
+           <button onClick={onRecord} className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-full flex items-center gap-3 shadow-[0_0_40px_rgba(59,130,246,0.6)] border border-white/30 transition-all hover:scale-105 active:scale-95">
+              <Video size={24}/> Simpan Sebagai Video
+           </button>
+        </motion.div>
       </div>
-
-      <p className="text-xl text-zinc-500 tracking-widest uppercase font-bold mt-20">SMK Negeri 7 Samarinda • 2026</p>
     </motion.div>
   </motion.div>
-);
+  );
+};
 
 
 // --- MAIN APP (TIMELINE CONTROLLER) ---
 export default function App() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isDone, setIsDone] = useState(false);
   const [scene, setScene] = useState(0); 
-  const audioRef = useRef(null);
+  const [isRecording, setIsRecording] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const chunksRef = useRef<BlobPart[]>([]);
 
   useEffect(() => {
     if (!isPlaying) return;
@@ -610,12 +745,19 @@ export default function App() {
       setTimeout(() => setScene(2), 3000),   // 3.00s: "Tak jauh berbeda" (Apple Music UI) - dur 4.55s
       setTimeout(() => setScene(3), 7550),   // 7.55s: "Got beat down by the world" - dur 3.18s
       setTimeout(() => setScene(4), 10330),  // 10.73s: "Sometimes I wanna fold"
-      setTimeout(() => setScene(5), 12300),  // 13.30s: "Namun suratmu kan kuceritakan..." (dipercepat -100ms agar Scene 4 sedikit lebih pendek)
-      setTimeout(() => setScene(6), 16800),  // 16.40s: "Bahwa aku pernah dicintai" (dimundurkan +390ms agar Scene 5 bisa dibaca)
+      setTimeout(() => setScene(5), 12300),  // 13.30s: "Namun suratmu kan kuceritakan..." 
+      setTimeout(() => setScene(6), 16800),  // 16.80s: "Bahwa aku pernah dicintai" 
       setTimeout(() => setScene(7), 21630),  // 21.63s: "Seada-adanya..." - dur 4.15s
       setTimeout(() => {
          setIsPlaying(false);
+         setIsDone(true);
          if (audioRef.current) audioRef.current.pause();
+         
+         // Stop recording automatically when video finishes
+         if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
+            mediaRecorderRef.current.stop();
+            setIsRecording(false);
+         }
       }, 29000) // Reset di 29s
     ];
 
@@ -629,6 +771,47 @@ export default function App() {
     }
     setScene(1);
     setIsPlaying(true);
+    setIsDone(false);
+  };
+
+  const handleRecord = async () => {
+    try {
+      alert("TIPS SEBELUM MEREKAM:\n1. Izinkan Browser merekam layar.\n2. Pilih tab 'Motion Web' ini.\n3. Centang 'Bagikan Audio Tab' (Share tab audio).\n4. Klik 'Share'. Animasi akan langsung diputar & direkam!\n5. Tunggu sampai animasi selesai (29 detik), file akan ter-download otomatis.");
+      const stream = await navigator.mediaDevices.getDisplayMedia({
+        video: { displaySurface: "browser" },
+        audio: true
+      });
+      
+      const mediaRecorder = new MediaRecorder(stream, { mimeType: 'video/webm' });
+      mediaRecorderRef.current = mediaRecorder;
+      chunksRef.current = [];
+
+      mediaRecorder.ondataavailable = (e) => {
+        if (e.data.size > 0) chunksRef.current.push(e.data);
+      };
+
+      mediaRecorder.onstop = () => {
+        const blob = new Blob(chunksRef.current, { type: 'video/webm' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        document.body.appendChild(a);
+        a.style.display = 'none';
+        a.href = url;
+        a.download = `Memori-Kelulusan-SMKN7.webm`;
+        a.click();
+        URL.revokeObjectURL(url);
+        // Stop all tracks to remove the recording red dot from browser tab
+        stream.getTracks().forEach(track => track.stop());
+      };
+
+      mediaRecorder.start();
+      setIsRecording(true);
+      // Automatically start animation timeline
+      handleStart();
+
+    } catch (err) {
+      console.error("Gagal memulai recording (mungkin user meng-cancel):", err);
+    }
   };
 
   return (
@@ -650,18 +833,31 @@ export default function App() {
 
       {/* Start Button Overlay */}
       {!isPlaying && scene === 0 && (
-        <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-zinc-950/80 backdrop-blur-xl">
+        <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-zinc-950/80 backdrop-blur-2xl">
           <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: "spring" }} className="text-center">
-            <h1 className="text-5xl font-black text-white mb-4 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-yellow-400">SMK 7 Samarinda</h1>
-            <h2 className="text-2xl font-bold text-zinc-300 mb-12 tracking-wide uppercase">Everything U Are - Motion</h2>
-            <button onClick={handleStart}
-              className="group relative px-12 py-6 bg-gradient-to-r from-blue-500 to-yellow-400 text-black font-black text-3xl rounded-full hover:scale-105 transition-all duration-300 flex items-center gap-5 shadow-[0_20px_60px_rgba(59,130,246,0.4)] border-4 border-white/20"
-            >
-              <Play className="fill-black w-10 h-10" />
-              MULAI RENDER 🎬
-            </button>
-            <p className="text-zinc-400 mt-8 text-sm font-medium bg-black/30 px-6 py-3 rounded-full backdrop-blur-md inline-flex items-center gap-2">
-              <Monitor size={16}/> Audio akan otomatis diputar. Siapkan OBS di mode Fullscreen (F11).
+            
+            <div className="mb-12 relative inline-block group">
+              <div className="absolute inset-0 bg-blue-500/30 blur-3xl rounded-full scale-150 group-hover:bg-purple-500/40 transition-colors duration-1000" />
+              <h1 className="text-6xl font-black text-white mb-4 tracking-tighter drop-shadow-2xl relative z-10 filter blur-[0.3px]">SMK 7 Samarinda</h1>
+              <h2 className="text-2xl font-bold text-zinc-300 tracking-[0.2em] uppercase relative z-10 drop-shadow-lg">After Effects Motion Web</h2>
+            </div>
+            
+            <div className="flex flex-col gap-4 items-center">
+              <button onClick={handleStart}
+                className="group relative px-12 py-6 bg-gradient-to-r from-blue-500 via-purple-500 to-yellow-400 text-black font-black text-3xl rounded-full hover:scale-105 transition-all duration-300 flex items-center gap-5 shadow-[0_20px_60px_rgba(59,130,246,0.5)] border-4 border-white overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-white/30 skew-x-[-20deg] group-hover:animate-[translate_1.5s_ease-in-out_infinite]" />
+                <Play className="fill-black w-10 h-10 relative z-10" />
+                <span className="relative z-10">LIHAT PREVIEW 🎬</span>
+              </button>
+              
+              <button onClick={handleRecord} className="mt-4 px-8 py-3 bg-white/10 hover:bg-white/20 text-white font-bold rounded-full flex items-center gap-3 backdrop-blur-md border border-white/20 transition-all hover:scale-105 active:scale-95 shadow-xl group">
+                 <Video size={20} className="group-hover:text-red-400 transition-colors"/> RENDER & SIMPAN (RECORD TAB)
+              </button>
+            </div>
+            
+            <p className="text-zinc-400 mt-12 text-sm font-medium bg-black/40 px-6 py-3 rounded-full backdrop-blur-md inline-flex items-center gap-2 border border-white/5">
+              <Monitor size={16}/> Audio akan otomatis diputar. Gunakan Chrome/Edge untuk Recording terbaik.
             </p>
           </motion.div>
         </div>
@@ -686,7 +882,16 @@ export default function App() {
         {scene === 4 && <Scene4Bento key="scene4" />}
         {scene === 5 && <Scene5IGStory key="scene5" />}
         {scene === 6 && <Scene6MacOS key="scene6" />}
-        {scene === 7 && <Scene7Bridge key="scene7" />}
+        {scene === 7 && <Scene7Bridge key="scene7" onReplay={handleStart} onRecord={handleRecord} />}
+      </AnimatePresence>
+      
+      {/* Recording Indicator */}
+      <AnimatePresence>
+        {isRecording && (
+          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="absolute top-8 left-1/2 -translate-x-1/2 bg-red-600/90 text-white px-6 py-2 rounded-full font-bold uppercase tracking-widest text-sm flex items-center gap-3 shadow-[0_0_20px_rgba(220,38,38,0.6)] z-[100] border border-red-400/50 backdrop-blur-md">
+            <div className="w-3 h-3 bg-white rounded-full animate-pulse shadow-[0_0_10px_white]"></div> Merekam Video... (Tunggu 29Dtk)
+          </motion.div>
+        )}
       </AnimatePresence>
 
       {/* Cinematic Film Grain Overlay */}
