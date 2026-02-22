@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Pause, SkipForward, SkipBack, Shuffle, Repeat, Heart, MessageCircle, Send, Bookmark, MoreHorizontal, ChevronDown, Music, Image as ImageIcon, Search, LayoutGrid, MapPin, CheckCircle2, Folder, ArrowUpRight, ChevronLeft, ChevronRight, Mic2, MonitorSpeaker, ListMusic, Monitor, RefreshCw, Video, VideoOff } from 'lucide-react';
+import { Play, Pause, SkipForward, SkipBack, Shuffle, Repeat, Heart, MessageCircle, Send, MoreHorizontal, ChevronDown, Music, Image as ImageIcon, Search, MapPin, CheckCircle2, Folder, ArrowUpRight, ChevronLeft, ChevronRight, Mic2, MonitorSpeaker, ListMusic, Monitor, RefreshCw, Video } from 'lucide-react';
 
 import { LyricsDisplay } from './components/LyricsDisplay';
 
@@ -729,7 +729,6 @@ const Scene7Bridge = ({ onReplay, onRecord }: { onReplay: () => void, onRecord: 
 // --- MAIN APP (TIMELINE CONTROLLER) ---
 export default function App() {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isDone, setIsDone] = useState(false);
   const [scene, setScene] = useState(0); 
   const [isRecording, setIsRecording] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -750,7 +749,6 @@ export default function App() {
       setTimeout(() => setScene(7), 21630),  // 21.63s: "Seada-adanya..." - dur 4.15s
       setTimeout(() => {
          setIsPlaying(false);
-         setIsDone(true);
          if (audioRef.current) audioRef.current.pause();
          
          // Stop recording automatically when video finishes
@@ -771,7 +769,6 @@ export default function App() {
     }
     setScene(1);
     setIsPlaying(true);
-    setIsDone(false);
   };
 
   const handleRecord = async () => {
@@ -779,8 +776,9 @@ export default function App() {
       alert("TIPS SEBELUM MEREKAM:\n1. Izinkan Browser merekam layar.\n2. Pilih tab 'Motion Web' ini.\n3. Centang 'Bagikan Audio Tab' (Share tab audio).\n4. Klik 'Share'. Animasi akan langsung diputar & direkam!\n5. Tunggu sampai animasi selesai (29 detik), file akan ter-download otomatis.");
       const stream = await navigator.mediaDevices.getDisplayMedia({
         video: { displaySurface: "browser" },
-        audio: true
-      });
+        audio: true,
+        preferCurrentTab: true
+      } as any);
       
       const mediaRecorder = new MediaRecorder(stream, { mimeType: 'video/webm' });
       mediaRecorderRef.current = mediaRecorder;

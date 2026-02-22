@@ -9,7 +9,6 @@ import {
   useVideoConfig,
   spring,
   interpolate,
-  Composition,
 } from "remotion";
 import { Music, Cloud, Image as ImageIcon, LayoutGrid } from "lucide-react";
 
@@ -62,7 +61,6 @@ const Scene1: React.FC = () => {
 // ==========================================
 const Scene2: React.FC = () => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
 
   const lyrics = [
     "Dan ku menyelamatkanmu",
@@ -114,7 +112,7 @@ const Scene3: React.FC = () => {
   const currentLogoScale = interpolate(logoScale, [0, 1], showWidgets ? [3, 0.8] : [0, 3], { extrapolateLeft: 'clamp' });
 
   // Animasi 4 Widget
-  const widgetScale = spring({ frame: frame - fps, fps, config: { bounce: 0.6 } });
+  const widgetScale = spring({ frame: frame - fps, fps, config: { damping: 12 } });
 
   return (
     <AbsoluteFill 
@@ -148,7 +146,7 @@ const Scene3: React.FC = () => {
           {/* Top Right - Photos */}
           <div
             style={{ 
-              transform: `scale(${spring({ frame: frame - fps - 5, fps, config: { bounce: 0.6 } })})` 
+              transform: `scale(${spring({ frame: frame - fps - 5, fps, config: { damping: 12 } })})` 
             }}
             className="absolute top-10 right-10 md:top-20 md:right-20 w-40 h-48 bg-gray-200 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center"
           >
@@ -158,7 +156,7 @@ const Scene3: React.FC = () => {
           {/* Bottom Left - Playlist */}
           <div
              style={{ 
-              transform: `scale(${spring({ frame: frame - fps - 10, fps, config: { bounce: 0.6 } })})` 
+              transform: `scale(${spring({ frame: frame - fps - 10, fps, config: { damping: 12 } })})` 
             }}
             className="absolute bottom-10 left-10 md:bottom-20 md:left-20 w-64 h-32 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-5 flex items-center gap-4 shadow-2xl text-white"
           >
@@ -174,7 +172,7 @@ const Scene3: React.FC = () => {
           {/* Bottom Right - Grid */}
           <div
             style={{ 
-              transform: `scale(${spring({ frame: frame - fps - 15, fps, config: { bounce: 0.6 } })})` 
+              transform: `scale(${spring({ frame: frame - fps - 15, fps, config: { damping: 12 } })})` 
             }}
             className="absolute bottom-10 right-10 md:bottom-20 md:right-20 w-48 h-48 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-6 shadow-2xl flex items-center justify-center"
           >
@@ -215,7 +213,7 @@ const Scene4: React.FC = () => {
           if (frame < startFrame) return null;
 
           const localFrame = frame - startFrame;
-          const bubbleScale = spring({ frame: localFrame, fps, config: { bounce: 0.5 } });
+          const bubbleScale = spring({ frame: localFrame, fps, config: { damping: 12 } });
           const popY = interpolate(bubbleScale, [0, 1], [40, 0]);
 
           return (
@@ -243,7 +241,7 @@ const Scene5: React.FC = () => {
   const { fps } = useVideoConfig();
 
   const bgOpacity = interpolate(frame, [0, 15], [0, 1]);
-  const windowScale = spring({ frame, fps, config: { bounce: 0.4 } });
+  const windowScale = spring({ frame, fps, config: { damping: 12 } });
 
   const stickers = [
     { text: "Bahwa", rotate: "-12deg", color: "bg-red-500", top: "-top-6", left: "-left-10" },
@@ -286,7 +284,7 @@ const Scene5: React.FC = () => {
           if (frame < startFrame) return null;
 
           const localFrame = frame - startFrame;
-          const sScale = spring({ frame: localFrame, fps, config: { bounce: 0.6 } });
+          const sScale = spring({ frame: localFrame, fps, config: { damping: 12 } });
           const popY = interpolate(sScale, [0, 1], [50, 0]);
 
           return (
