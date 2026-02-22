@@ -1,7 +1,10 @@
 {
-  "name": "tmp-app",
-  "private": true,
-  "version": "0.0.0",
+  "name": "memori-kelulusan-motion-web",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Cinematic graduation motion web video built entirely with React, Framer Motion, and code — no After Effects needed.",
+  "author": "Al-Ghani Desta Setyawan <kou.real@outlook.com>",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
